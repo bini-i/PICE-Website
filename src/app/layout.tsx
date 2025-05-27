@@ -29,18 +29,6 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
 
-        <link 
-          rel="stylesheet" 
-          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
-          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-        />
-
-        {/* <!-- Make sure you put this AFTER Leaflet's CSS --> */}
-        <script 
-          type="text/javascript"
-          src="/static/leaflet.js" 
-        ></script>
-
         <script 
           defer 
           type="text/javascript" 

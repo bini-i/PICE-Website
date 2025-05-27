@@ -1,11 +1,20 @@
 import { Header } from "@/sections/Header";
 import { Mission } from "@/sections/Mission";
 import { Footer } from "@/sections/Footer";
+import { twMerge } from "tailwind-merge";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 
 export default function Home() {
   return (
     <>
-      <div className="hero-gradient">
+      <div className={twMerge(inter.className ,"hero-gradient")}>
         <Header />
         <div className="py-14">
             <div className="container">

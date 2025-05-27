@@ -17,20 +17,20 @@ import { Inter } from "next/font/google";
 
 import { twMerge} from "tailwind-merge";
 
-const roboto = Roboto({
-  weight: ['400', '500', '700'],
-  subsets: ['latin'],
-})
+// const roboto = Roboto({
+//   weight: ['400', '500', '700'],
+//   subsets: ['latin'],
+// })
 
-const merriweather = Merriweather({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-})
+// const merriweather = Merriweather({
+//   weight: ['400', '700'],
+//   subsets: ['latin'],
+// })
 
-const barlow = Barlow_Semi_Condensed({
-  weight: ['400', '600', '700'],
-  subsets: ['latin'],
-})
+// const barlow = Barlow_Semi_Condensed({
+//   weight: ['400', '600', '700'],
+//   subsets: ['latin'],
+// })
 
 const inter = Inter({
   weight: ['400', '500', '700'],

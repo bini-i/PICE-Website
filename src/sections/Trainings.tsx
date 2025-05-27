@@ -8,9 +8,18 @@ import GarmentImage from "@/assets/garment-image.jpg";
 
 import Link from "next/link";
 
+import { twMerge } from "tailwind-merge";
+
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+})
+
 export const Trainings = () => {
     return (
-        <section id="training" className="bg-white py-24 overflow-x-clip">
+        <section id="training" className={twMerge(inter.className, "bg-white py-24 overflow-x-clip")}>
             <div className="container">
                 <div className="max-w-[540px] mx-auto">
                     <div className="flex justify-center">

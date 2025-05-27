@@ -14,24 +14,30 @@ import { Inter } from "next/font/google";
 
 import { twMerge} from "tailwind-merge";
 
+import localFont from "next/font/local";
+
 const roboto = Roboto({
-  weight: ['400', '500', '700'],
-  subsets: ['latin'],
+    weight: ['400', '500', '700'],
+    subsets: ['latin'],
+    display: 'swap',
 })
-
+  
 const merriweather = Merriweather({
-  weight: ['400', '700'],
-  subsets: ['latin'],
+    weight: ['400', '700'],
+    subsets: ['latin'],
+    display: 'swap',
 })
-
+  
 const barlow = Barlow_Semi_Condensed({
-  weight: ['400', '600', '700'],
-  subsets: ['latin'],
+    weight: ['400', '600', '700'],
+    subsets: ['latin'],
+    display: 'swap',
 })
-
+  
 const inter = Inter({
-  weight: ['400', '500', '700'],
-  subsets: ['latin'],
+    weight: ['400', '500', '700'],
+    subsets: ['latin'],
+    display: 'swap',
 })
 
 

@@ -5,11 +5,13 @@ import { Barlow_Semi_Condensed } from "next/font/google";
 const barlow = Barlow_Semi_Condensed({
     weight: ['400', '600', '700'],
     subsets: ['latin'],
+    display: 'swap',
 })
  
 const roboto = Roboto({
     weight: ['400', '500', '700'],
     subsets: ['latin'],
+    display: 'swap',
 })
 
 export const Technology = () => {

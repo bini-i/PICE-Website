@@ -6,9 +6,18 @@ import { faPhone, faEnvelope, faLocation, faLocationPin, faLocationPinLock } fro
 import Link from "next/link";
 import { faFacebook, faTelegram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
+import { Barlow_Semi_Condensed } from "next/font/google";
+import { twMerge } from "tailwind-merge";
+
+const barlow = Barlow_Semi_Condensed({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 export const Footer = () => {
   return (
-    <footer className="bg-[#0384d2] text-[#BCBCBC] py-10">
+    <footer className={twMerge(barlow.className, "bg-[#0384d2] text-[#BCBCBC] py-10")}>
       <div className="container">
         <div className="footer-controller lg:flex">
           <div className="footer-column-left my-8 md:pr-6">

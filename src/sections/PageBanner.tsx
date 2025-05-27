@@ -1,4 +1,4 @@
-export const PageBanner = ({title}) => {
+export const PageBanner = ({title:any}) => {
     return (
         <section className="page-banner">
             <div className="py-14 bg-[radial-gradient(ellipse_200%_100%_at_bottom_right,#fcfb00,#EAEEFE_100%)]">

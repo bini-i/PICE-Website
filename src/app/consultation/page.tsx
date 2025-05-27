@@ -2,18 +2,26 @@ import { Header } from "@/sections/Header";
 import { Technology } from "@/sections/Technology";
 import { Footer } from "@/sections/Footer";
 import { twMerge} from "tailwind-merge";
-import { Roboto } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import { Consultation } from "@/sections/Consultation";
 
 const roboto = Roboto({
     weight: ['400', '500', '700'],
     subsets: ['latin'],
+    display: 'swap',
 })
+
+const inter = Inter({
+    weight: ['400', '500', '700'],
+    subsets: ['latin'],
+    display: 'swap',
+})
+
 
 export default function Home() {
     return (
         <>
-            <div className="hero-gradient">
+            <div className={twMerge(inter.className, "hero-gradient")}>
                 <Header />
 
                 <section className="hero flex flex-col items-center container">

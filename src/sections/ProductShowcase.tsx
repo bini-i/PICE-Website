@@ -3,10 +3,18 @@ import Image from "next/image";
 import ArrowIcon from "@/assets/arrow-right.svg";
 import CheckIcon from "@/assets/check.svg";
 import ShowRoomCarousel from "./showroom-carousel";
+import { twMerge } from "tailwind-merge";
+
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+})
 
 export const ProductShowcase = () => {
   return (
-    <section className="bg-gradient-to-b from-[#FFFFFF] to-[#fcfc0071] py-24 overflow-x-clip">
+    <section className={twMerge(inter.className, "bg-gradient-to-b from-[#FFFFFF] to-[#fcfc0071] py-24 overflow-x-clip")}>
       <div className="container">
         <div className="max-w-[540px] mx-auto mb-6">
           <div className="flex justify-center">
@@ -23,8 +31,8 @@ export const ProductShowcase = () => {
           <div className="flex flex-col md:flex-row gap-6 lg:gap-0">
             <div className="mb-10 lg:px-3">
               <CheckIcon className="h-6 w-6" />
-              <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Machine</h3>
-              <p className="text-[14px] leading-[30px] tracking-tight">lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+              <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Machine Shop</h3>
+              <p className="text-[14px] leading-[30px] tracking-tight"></p>
               {/* <div className="flex gap-1 items-center mt-[20px]">
                 <button className="btn btn-text gap-1 px-0">
                   <span>Learn more</span>
@@ -34,8 +42,8 @@ export const ProductShowcase = () => {
             </div>
             <div className="mb-10 lg:px-3">
               <CheckIcon className="h-6 w-6" />
-              <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Garment</h3>
-              <p className="text-[14px] leading-[30px] tracking-tight">lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+              <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Garment Shop</h3>
+              <p className="text-[14px] leading-[30px] tracking-tight"></p>
               {/* <div className="flex gap-1 items-center mt-[20px]">
                 <button className="btn btn-text gap-1 px-0">
                   <span>Learn more</span>
@@ -49,7 +57,7 @@ export const ProductShowcase = () => {
             <div className="mb-10 lg:px-3">
               <CheckIcon className="h-6 w-6" />
               <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">ICT Labs</h3>
-              <p className="text-[14px] leading-[30px] tracking-tight">lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+              <p className="text-[14px] leading-[30px] tracking-tight"></p>
               {/* <div className="flex gap-1 items-center mt-[20px]">
                 <button className="btn btn-text gap-1 px-0">
                   <span>Learn more</span>
@@ -59,8 +67,8 @@ export const ProductShowcase = () => {
             </div>
             <div className="mb-10 lg:px-3">
               <CheckIcon className="h-6 w-6" />
-              <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">On site consultation</h3>
-              <p className="text-[14px] leading-[30px] tracking-tight">lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+              <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Wood Shop</h3>
+              <p className="text-[14px] leading-[30px] tracking-tight"></p>
               {/* <div className="flex gap-1 items-center mt-[20px]">
                 <button className="btn btn-text gap-1 px-0">
                   <span>Learn more</span>

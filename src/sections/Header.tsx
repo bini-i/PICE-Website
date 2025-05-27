@@ -14,10 +14,10 @@ import { faFacebook, faTelegram, faTwitter, faYoutube } from "@fortawesome/free-
 import { faHamburger } from "@fortawesome/free-solid-svg-icons";
 
 
-function NavItem(props) {
+function NavItem(props: any) {
   const pathname = usePathname();
 
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <div className="flex items-center" onMouseEnter={() => setOpen(!open)} onMouseLeave={() => setOpen(!open)} >
@@ -33,7 +33,7 @@ function NavItem(props) {
 function DropdownMenu() {
   const pathname = usePathname();
 
-  function DropdownItem(props) {
+  function DropdownItem(props: any) {
     return (
       <Link className={ pathname === "/" ? "menu-item hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "menu-item hover:-translate-y-1 hover:scale-101"} href={props.pathname}>{props.children}</Link>
     )
@@ -107,7 +107,7 @@ export const Header = () => {
                     </NavItem>
                   </li>
                   <li><Link className={ pathname === "/technology" ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-8 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-8"} href="/technology">Technology</Link></li>
-                  <li><Link className={ pathname === "/research" ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"} href="/consultation">Consultation</Link></li>
+                  <li><Link className={ pathname === "/consultation" ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"} href="/consultation">Consultation</Link></li>
                   <li><Link className={ pathname === "/about" ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"} href="/about">About</Link></li>
                 </ul>
               </nav>
