@@ -3,6 +3,7 @@
 import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
 import { LogoTicker } from "@/sections/LogoTicker";
+import { Statistics } from "@/sections/Statistics";
 import { ProductShowcase } from "@/sections/ProductShowcase";
 import { Trainings } from "@/sections/Trainings";
 import { Footer } from "@/sections/Footer";
@@ -53,6 +54,7 @@ export default function Home() {
         </div>
       </div>
       <LogoTicker />
+      <Statistics />
       <ProductShowcase />
       <Trainings />
 

@@ -1127,6 +1127,10 @@ Footer {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1295,6 +1299,9 @@ Footer {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -1381,9 +1388,6 @@ Footer {
   --tw-gradient-from: #000 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.to-\[\#1a419a82\] {
-  --tw-gradient-to: #1a419a82 var(--tw-gradient-to-position);
 }
 .to-\[\#535303\] {
   --tw-gradient-to: #535303 var(--tw-gradient-to-position);
@@ -1496,15 +1500,6 @@ Footer {
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-.pb-4 {
-  padding-bottom: 1rem;
 }
 .text-left {
   text-align: left;
