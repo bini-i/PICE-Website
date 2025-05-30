@@ -18,11 +18,10 @@
       "static/css/app/consultation/page.css",
       "static/chunks/app/consultation/page.js"
     ],
-    "/technology/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/technology/page.css",
-      "static/chunks/app/technology/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
