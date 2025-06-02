@@ -1,28 +1,16 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
-    ],
     "/capacity-building/trainings/computer/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/capacity-building/trainings/computer/page.css",
       "static/chunks/app/capacity-building/trainings/computer/page.js"
     ],
-    "/consultation/page": [
+    "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/consultation/page.css",
-      "static/chunks/app/consultation/page.js"
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/capacity-building/trainings/automotive/page": [
       "static/chunks/webpack.js",

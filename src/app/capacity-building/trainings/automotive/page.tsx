@@ -52,7 +52,7 @@ export default function Home() {
         
         <div className="banner-image-container">
             {/* <Image src={AutomotiveBanner} alt="student’s perspective" className="w-full" /> */}
-            <div className="banner-image" style={{backgroundImage: "url(" + "PICE-Website/static/images/automotive-banner.png" + ")"}}></div>
+            <div className="banner-image" style={{backgroundImage: "url(" + "/static/images/automotive-banner.png" + ")"}}></div>
         </div>
 
         <div className="banner-title container">
