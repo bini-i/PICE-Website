@@ -286,6 +286,61 @@
         background-size: cover;
     }
 
+    .computer-banner-image {
+        background-image: url(./../assets/computer-banner.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .construction-banner-image {
+        background-image: url(./../assets/construction-banner.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .electronic-banner-image {
+        background-image: url(./../assets/electronic-banner.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .garment-banner-image {
+        background-image: url(./../assets/garment-banner.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .leather-banner-image {
+        background-image: url(./../assets/leather-banner.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .manufacturing-banner-image {
+        background-image: url(./../assets/manufacturing-banner.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .welding-banner-image {
+        background-image: url(./../assets/welding-banner.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .wood-banner-image {
+        background-image: url(./../assets/wood-banner.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
 
     /* Hero */

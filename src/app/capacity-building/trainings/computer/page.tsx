@@ -50,7 +50,7 @@ export default function Home() {
         
         <div className="banner-image-container">
             {/* <Image src={AutomotiveBanner} alt="student’s perspective" className="w-full" /> */}
-            <div className="banner-image" style={{backgroundImage: "url(" + "/static/images/computer-banner.png" + ")"}}></div>
+            <div className="computer-banner-image"></div>
 
             <div className="banner-gradient"></div>
         </div>
