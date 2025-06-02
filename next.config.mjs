@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
-
-const isProd = process.env.NODE_ENV === "production"
-
 const nextConfig = {
   output: 'export',
-
-  basePath: isProd ? '/PICE-Website' : '',
+  
+  // experimental: {
+  //   optimizeFonts: false,
+  // },
   
   webpack(config) {
     // Grab the existing rule that handles SVG imports
