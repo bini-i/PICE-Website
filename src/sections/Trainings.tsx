@@ -70,13 +70,13 @@ export const Trainings = () => {
                         </div>
                     </Link>
 
-                    <div className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
+                    <Link href="/capacity-building/trainings/manufacturing" className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
                         <div className="">
                             <Image src={ManufacturingImage} alt="Manufacturing Image" className="" />
                             <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[25px] md:leading-[30px] font-bold tracking-tighter">Manufacturing</h3>
                             <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p>
                         </div>
-                    </div>
+                    </Link>
 
                 </div>
             </div>

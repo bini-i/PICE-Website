@@ -35,7 +35,7 @@ const barlow = Barlow_Semi_Condensed({
 const inter = Inter({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
-  display: 'swap',
+//   display: 'swap',
 })
 
 

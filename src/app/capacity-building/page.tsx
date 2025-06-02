@@ -21,6 +21,7 @@ const merriweather = Merriweather({
 const barlow = Barlow_Semi_Condensed({
   weight: ['400', '600', '700'],
   subsets: ['latin'],
+  display: 'swap',
 })
 
 export default function Home() {

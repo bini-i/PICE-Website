@@ -1,27 +1,188 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/chunks/app/_not-found/page-bef8d061b9215eb4.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/e2f23e48d6468e15.css",
+      "static/chunks/app/layout-b401dac2b78b4202.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/about/page-f3c7ee2b53e0504c.js"
+    ],
+    "/capacity-building/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/1948419b5038c647.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/page-e75e1bc9c1b537da.js"
+    ],
+    "/capacity-building/trainings/automotive/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/trainings/automotive/page-8387df7255da4fd3.js"
+    ],
+    "/capacity-building/trainings/computer/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/trainings/computer/page-d7e8ce2da62dd5c1.js"
+    ],
+    "/capacity-building/trainings/construction/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/trainings/construction/page-3fc1cb77e07fde76.js"
+    ],
+    "/capacity-building/trainings/electronics/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/trainings/electronics/page-c0094085eeb95dc5.js"
+    ],
+    "/capacity-building/trainings/garment/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/trainings/garment/page-46c2f1fc244d6979.js"
+    ],
+    "/capacity-building/trainings/leather/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/trainings/leather/page-47d4e9109c865dc6.js"
+    ],
+    "/capacity-building/trainings/manufacturing/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/trainings/manufacturing/page-89fdf1899fbdc88c.js"
+    ],
+    "/capacity-building/trainings/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/ab5e5ebda7b1767b.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/trainings/page-1ad6980d4980221c.js"
+    ],
+    "/capacity-building/trainings/welding/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/trainings/welding/page-512f862c4db206bc.js"
+    ],
+    "/capacity-building/trainings/wood/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/capacity-building/trainings/wood/page-98a8ee4726442820.js"
     ],
     "/consultation/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/consultation/page.css",
-      "static/chunks/app/consultation/page.js"
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/b89597f012666282.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/css/65e36d12b6d0fe9f.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/consultation/page-a58cbeb3589705dc.js"
     ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+    "/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/a048e806ead68525.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/css/ff2a8a1fc43a0a44.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/69b09407-4243da5b3dd12bae.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/87-e1aa4dbef2a36930.js",
+      "static/chunks/app/page-219bcab397a3c29a.js"
+    ],
+    "/technology/page": [
+      "static/chunks/webpack-891cd05955e53b57.js",
+      "static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+      "static/chunks/117-5eacbf076cfd154d.js",
+      "static/chunks/main-app-de8e95c14952b419.js",
+      "static/css/1af32ae560c894f0.css",
+      "static/css/6a7cde29137c80e8.css",
+      "static/chunks/870fdd6f-057087ebdfb6a3a5.js",
+      "static/chunks/740-a392b24d2d2b69f2.js",
+      "static/chunks/app/technology/page-f23e2ec7fa5c8248.js"
     ]
   }
 }
