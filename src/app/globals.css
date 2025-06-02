@@ -277,6 +277,17 @@
         width: min-content;
     }
 
+    /* Department banner images */
+
+    .automotive-banner-image {
+        background-image: url(./../assets/automotive-banner.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
     /* Hero */
 
     .hero-wrapper {

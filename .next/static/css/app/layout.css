@@ -836,6 +836,13 @@ header nav a:hover {
         background-color: rgba(3,132,210,0.8);
         width: min-content;
     }
+/* Department banner images */
+.automotive-banner-image {
+        background-image: url(/_next/static/media/automotive-banner.c92ed528.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 /* Hero */
 .hero-wrapper {
         background-image: url(/_next/static/media/pice-hero.1c2908c3.png);
