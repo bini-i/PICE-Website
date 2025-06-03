@@ -2,8 +2,6 @@
 const nextConfig = {
   output: 'export',
   
-  basePath: '/PICE-Website',
-  assetPrefix: '/PICE-Website',
 
   images: {
     unoptimized: true,

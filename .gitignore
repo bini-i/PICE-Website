@@ -1,3 +1,13 @@
 node_modules
-
-/out/
+target
+out
+dist
+logs
+public
+.cache
+.vscode
+.DS_Store
+.idea
+.next
+yarn-error.log
+npm-debug.log
