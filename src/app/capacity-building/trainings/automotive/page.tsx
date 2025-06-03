@@ -53,6 +53,8 @@ export default function Home() {
         <div className="banner-image-container">
             {/* <Image src={AutomotiveBanner} alt="student’s perspective" className="w-full" /> */}
             <div className="automotive-banner-image"></div>
+
+            <div className="banner-gradient"></div>
         </div>
 
         <div className="banner-title container">

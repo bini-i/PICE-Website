@@ -1,3 +1,10 @@
+import Image from "next/image";
+
+import FuelIllustration from "@/assets/fuel-illustration.png";
+import HiringIllustration from "@/assets/hiring-illustration.png";
+import SpecificationIllustration from "@/assets/specification-illustration.png";
+import MachineIllustration from "@/assets/machine-illustration.png";
+
 import { twMerge} from "tailwind-merge";
 import { Roboto } from "next/font/google";
 import { Merriweather } from "next/font/google";
@@ -81,11 +88,7 @@ export const Consultation = () => {
                 <section className={twMerge(barlow.className, "text-black py-6 md:py-20")} id="services">
                     <div className="container md:flex">
                         <div className="md:w-1/2 px-4 relative">
-                            <img 
-                                src="/static/images/fuel-illustration.png" 
-                                alt="Job Interviews Illustration" 
-                                className="h-auto w-[300px] md:absolute top-[-60px]"
-                            />
+                            <Image src={FuelIllustration} alt="Fuel illustration" className="h-auto w-[300px] md:absolute top-[-60px]"/>
                         </div>
 
                         <div className="md:w-1/2 px-4">
@@ -103,11 +106,7 @@ export const Consultation = () => {
                     <div className="container md:flex">
 
                         <div className="md:hidden md:w-1/2 px-4 py-6 relative">
-                            <img 
-                                src="/static/images/hiring-illustration.png" 
-                                alt="Job Interviews Illustration" 
-                                className="h-auto w-[300px] "
-                            />
+                            <Image src={HiringIllustration} alt="Hiring illustration" className="h-auto w-[300px] "/>
                         </div>
 
                         <div className="md:w-1/2 px-4">
@@ -119,11 +118,7 @@ export const Consultation = () => {
                         </div>
 
                         <div className="hidden md:flex md:w-1/2 px-4 py-6 relative">
-                            <img 
-                                src="/static/images/hiring-illustration.png" 
-                                alt="Job Interviews Illustration" 
-                                className="h-auto w-[300px] "
-                            />
+                            <Image src={HiringIllustration} alt="Hiring illustration" className="h-auto w-[300px] "/>
                         </div>
                     </div>
                 </section>
@@ -131,11 +126,7 @@ export const Consultation = () => {
                 <section className={twMerge(barlow.className, "text-black py-10")} id="services">
                     <div className="container md:flex">
                         <div className="md:w-1/2 px-4 relative">
-                            <img 
-                                src="/static/images/specification-illustration.png" 
-                                alt="Job Interviews Illustration" 
-                                className="h-auto w-[300px] "
-                            />
+                            <Image src={SpecificationIllustration} alt="Specification illustration" className="h-auto w-[300px] "/>
                         </div>
                         <div className="md:w-1/2 px-4 py-6">
 
@@ -151,11 +142,7 @@ export const Consultation = () => {
                     <div className="container md:flex">
                         
                         <div className="md:hidden md:w-1/2 px-4 relative">
-                            <img 
-                                src="/static/images/machine-installation.png" 
-                                alt="Job Interviews Illustration" 
-                                className="h-auto w-[300px] "
-                            />
+                            <Image src={MachineIllustration} alt="Machine illustration" className="h-auto w-[300px] "/>
                         </div>
 
                         <div className="md:w-1/2 px-4 py-6">
@@ -164,18 +151,14 @@ export const Consultation = () => {
                             <p className="text-lg text-gray-600">Our Machinery Installation and Commissioning Service ensures seamless setup and optimal performance of your new equipment. We handle everything from precise positioning and connection to rigorous testing and calibration, guaranteeing your machinery is fully operational, efficient, and ready for production from day one.</p>
                         </div>
                         <div className="hidden md:flex md:w-1/2 px-4 relative">
-                            <img 
-                                src="/static/images/machine-installation.png" 
-                                alt="Job Interviews Illustration" 
-                                className="h-auto w-[300px] "
-                            />
+                            <Image src={MachineIllustration} alt="Machine illustration" className="h-auto w-[300px] "/>
                         </div>
 
                     </div>
                 </section>
             </div>
 
-            <section className={twMerge(barlow.className, "py-20 flex items-center w-full")} style={{backgroundImage: "url(" + "/static/images/workshop-illustration.png" + ")" , backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+            <section className={twMerge(barlow.className, "py-20 flex items-center w-full consultation-banner-image")}>
                 <div className="container md:flex">
                     <div className="md:w-1/2 text-white consultation-banner-title">
                         <h2 className="text-3xl font-bold mb-4">Workshop Design Preparation and Organization</h2>

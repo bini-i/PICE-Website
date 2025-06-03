@@ -46,7 +46,7 @@ export default function Home() {
     <>
       {/* <PageBanner title="Automotive Department" /> */}
 
-      <section className={twMerge(inter.className, "banner-container pt-8 pb-20 md:pt-5 md:pb-10 overflow-x-clip")}>
+      <section className={twMerge(inter.className, "banner-container pb-20 md:pb-10 overflow-x-clip")}>
         
         <Header />
         

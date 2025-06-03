@@ -25,7 +25,7 @@ function ShowRoomCarousel() {
                 1024: { items: 3 },
             }}
             autoPlay
-            autoPlayInterval={2500}
+            autoPlayInterval={1500}
             infinite
         />
     );

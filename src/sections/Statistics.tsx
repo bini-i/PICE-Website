@@ -48,7 +48,7 @@ export const Statistics = () => {
                 </div>
                 <div className="flex flex-col items-center">
                     <div className="font-bold text-3xl text-[#000] mb-2">
-                        <CountUp start={0} end={2000} duration={5} delay={0}/>+
+                        <CountUp start={0} end={10000} duration={5} delay={0}/>+
                     </div>
                     <p className="font-semibold text-xl">Graduates</p> 
                 </div>

@@ -3,23 +3,23 @@
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* latin-ext */
 @font-face {
-  font-family: '__DM_Sans_05e5f9';
+  font-family: '__DM_Sans_989755';
   font-style: normal;
   font-weight: 100 1000;
   font-display: swap;
-  src: url(/_next/static/media/56d4c7a1c09c3371-s.woff2) format('woff2');
+  src: url(/_next/static/media/8c0f877bd1202585-s.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: '__DM_Sans_05e5f9';
+  font-family: '__DM_Sans_989755';
   font-style: normal;
   font-weight: 100 1000;
   font-display: swap;
-  src: url(/_next/static/media/7e6a2e30184bb114-s.p.woff2) format('woff2');
+  src: url(/_next/static/media/9c18eba18d4baf22-s.p.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__DM_Sans_Fallback_05e5f9';src: local("Arial");ascent-override: 94.90%;descent-override: 29.66%;line-gap-override: 0.00%;size-adjust: 104.53%
-}.__className_05e5f9 {font-family: '__DM_Sans_05e5f9', '__DM_Sans_Fallback_05e5f9';font-style: normal
+}@font-face {font-family: '__DM_Sans_Fallback_989755';src: local("Arial");ascent-override: 94.90%;descent-override: 29.66%;line-gap-override: 0.00%;size-adjust: 104.53%
+}.__className_989755 {font-family: '__DM_Sans_989755', '__DM_Sans_Fallback_989755';font-style: normal
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
@@ -791,17 +791,6 @@ header nav a:hover {
         position: absolute;
         top: 0;
     }
-.banner-image {
-        /* background-image: url(./../assets/automotive-banner.jpg); */
-        
-        width: 100%;
-        height: 100%;
-
-        background-attachment: fixed;
-        background-position-y: -250px;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 .banner-gradient {
         /* background: linear-gradient(53deg,rgba(20, 20, 0, 0.72) 0%, rgba(56, 56, 0, 0.65) 22%, rgba(0, 104, 148, 0.38) 32%, rgba(0, 104, 148, 0) 42%); */
         
@@ -811,7 +800,7 @@ header nav a:hover {
         opacity: 80%;
         
         width: 100%;
-        height: 15%;
+        height: 10%;
 
         z-index: 20;
         position: absolute;
@@ -839,6 +828,54 @@ header nav a:hover {
 /* Department banner images */
 .automotive-banner-image {
         background-image: url(/_next/static/media/automotive-banner.c92ed528.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.computer-banner-image {
+        background-image: url(/_next/static/media/computer-banner.af02e54a.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.construction-banner-image {
+        background-image: url(/_next/static/media/construction-banner.26c9d198.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.electronic-banner-image {
+        background-image: url(/_next/static/media/electronic-banner.c71f5a33.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.garment-banner-image {
+        background-image: url(/_next/static/media/garment-banner.ca5c79a0.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.leather-banner-image {
+        background-image: url(/_next/static/media/leather-banner.4766bc72.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.manufacturing-banner-image {
+        background-image: url(/_next/static/media/manufacturing-banner.61a6007d.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.welding-banner-image {
+        background-image: url(/_next/static/media/welding-banner.55139cb0.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.wood-banner-image {
+        background-image: url(/_next/static/media/wood-banner.0a8f36aa.png);
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1062,6 +1099,12 @@ header nav a:hover {
         padding: 17px 34px 26px 34px;
         width: min-content;
     } */
+.consultation-banner-image {
+        background-image: url(/_next/static/media/workshop-illustration.a4a58c50.png);
+        background-position: "center";
+        background-repeat: "no-repeat";
+        background-size: "cover";
+    }
 /* Footer */
 /* Footer social section */
 Footer {
@@ -1694,24 +1737,19 @@ Footer {
 .\[mask-image\:linear-gradient\(to_right\2c transparent\2c black\2c transparent\)\] {
   mask-image: linear-gradient(to right,transparent,black,transparent);
 }
-
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
-
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
-
 .hover\:decoration-\[\#fcfb00\]:hover {
   text-decoration-color: #fcfb00;
 }
-
 @media (min-width: 768px) {
 
   .md\:absolute {
@@ -1849,7 +1887,6 @@ Footer {
     line-height: 60px;
   }
 }
-
 @media (min-width: 1200px) {
 
   .lg\:flex {
@@ -1883,11 +1920,9 @@ Footer {
     line-height: 1;
   }
 }
-
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
 }
-
 @media (prefers-color-scheme: dark) {
 
   .dark\:text-black {
