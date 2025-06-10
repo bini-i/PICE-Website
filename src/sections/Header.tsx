@@ -13,6 +13,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTelegram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faHamburger } from "@fortawesome/free-solid-svg-icons";
 
+import { Barlow_Semi_Condensed } from "next/font/google";
+import { twMerge } from "tailwind-merge";
+
+const barlow = Barlow_Semi_Condensed({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 function NavItem(props: any) {
   const pathname = usePathname();
@@ -74,10 +82,15 @@ export const Header = () => {
         <div className="py-5 backdrop-blur-sm">
           <div className="container">
             <div className="flex items-center justify-between">
-              <div className="flex gap-3">
-                <Image src={Logo} alt="PICE Logo" height={40} width={40} />
-                <div className="pl-3 border-l-2 border-[#fff] flex items-center"><a href="/" className="text-xl text-[#fff] font-bold">PICE</a></div>
-              </div>
+              <a href="/">
+                <div className="flex gap-3">
+                  <Image src={Logo} alt="PICE Logo" height={60} width={60} className="pr-3 border-r-2 border-[#fff]"/>
+                  <div className="flex flex-col justify-center">
+                    <div className="text-xl text-[#fff] font-bold">PICE</div>
+                    <div className="text-sm text-[#fff] font-bold">Since 1962</div>
+                  </div>
+                </div>
+              </a>
               <nav className="md:flex items-center">
                 <span id="hamburger-button" className="p-2 cursor-pointer md:hidden text-[#fcfb00]">
                   {/* <MenuIcon className="h-5 w-5 md:hidden"/> */}

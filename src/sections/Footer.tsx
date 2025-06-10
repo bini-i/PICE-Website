@@ -20,7 +20,7 @@ export const Footer = () => {
     <footer className={twMerge(barlow.className, "bg-[#0384d2] text-[#BCBCBC] py-10")}>
       <div className="container">
         <div className="footer-controller lg:flex">
-          <div className="footer-column-left my-8 md:pr-6">
+          <div className="footer-column-left md:border-r-2 my-8 md:pr-6">
             <div className="inline-flex items-center">
               <div className="footer-logo-outer-border">
                 <Image src={Logo} height={80} alt="PICE Logo" className="relative"/>
@@ -54,7 +54,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-column-middle my-8 md:px-10 lg:pt-16">
+          <div className="footer-column-middle md:border-r-2 my-8 md:px-10 lg:pt-16">
             <h3 className="font-bold text-2xl text-[#fff] mb-3">Helpful Links</h3>
             <ul className="flex flex-col list-disc font-bold">
               <li className="">
@@ -64,13 +64,13 @@ export const Footer = () => {
                 <a className="text-[#fff] underline text-xl footer-nav-link-item" href="/capacity-building">Trainings</a>
               </li>
               <li className="footer-nav-link-item">
-                <a className="text-[#fff] underline text-xl footer-nav-link-item" href="">Specification</a>
+                <a className="text-[#fff] underline text-xl footer-nav-link-item" href="/consultation/#specification">Specification</a>
               </li>
               <li className="footer-nav-link-item">
-                <a className="text-[#fff] underline text-xl footer-nav-link-item" href="">Gas measurement</a>
+                <a className="text-[#fff] underline text-xl footer-nav-link-item" href="/consultation/#fuel">Gas measurement</a>
               </li>
               <li className="footer-nav-link-item">
-                <a className="text-[#fff] underline text-xl footer-nav-link-item" href="">Hiring evaluation</a>
+                <a className="text-[#fff] underline text-xl footer-nav-link-item" href="/consultation/#skill">Skill Evaluation</a>
               </li>
             </ul>
           </div>

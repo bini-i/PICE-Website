@@ -2,7 +2,7 @@ import { Header } from "@/sections/Header";
 // import { Mission } from "@/sections/Mission";
 import { Footer } from "@/sections/Footer";
 import { PageBanner } from "@/sections/PageBanner";
-import { Roboto } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import { Merriweather } from "next/font/google";
 import { Barlow_Semi_Condensed } from "next/font/google";
 
@@ -19,9 +19,15 @@ const merriweather = Merriweather({
 })
 
 const barlow = Barlow_Semi_Condensed({
-  weight: ['400', '600', '700'],
-  subsets: ['latin'],
-  display: 'swap',
+    weight: ['400', '600', '700'],
+    subsets: ['latin'],
+    display: 'swap',
+})
+
+const inter = Inter({
+    weight: ['400', '500', '700'],
+    subsets: ['latin'],
+    display: 'swap',
 })
 
 export default function Home() {

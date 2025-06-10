@@ -640,13 +640,13 @@
         line-height: 1.625rem;
     }
 
-    .footer-column-left {
+    /* .footer-column-left {
         border-right: 1px solid #fff;
     }
 
     .footer-column-middle {
         border-right: 1px solid #fff;
-    }
+    } */
 
     .footer-column-middle li::marker {
         color: #fff;

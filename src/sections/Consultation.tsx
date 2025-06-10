@@ -85,7 +85,7 @@ export const Consultation = () => {
                     </div>
                 </section>
 
-                <section className={twMerge(barlow.className, "text-black py-6 md:py-20")} id="services">
+                <section className={twMerge(barlow.className, "text-black py-6 md:py-20")} id="fuel">
                     <div className="container md:flex">
                         <div className="md:w-1/2 px-4 relative">
                             <Image src={FuelIllustration} alt="Fuel illustration" className="h-auto w-[300px] md:absolute top-[-60px]"/>
@@ -102,7 +102,7 @@ export const Consultation = () => {
                 </section>
             
 
-                <section className={twMerge(barlow.className, "text-black py-10")} id="services">
+                <section className={twMerge(barlow.className, "text-black py-10")} id="skill">
                     <div className="container md:flex">
 
                         <div className="md:hidden md:w-1/2 px-4 py-6 relative">
@@ -123,7 +123,7 @@ export const Consultation = () => {
                     </div>
                 </section>
 
-                <section className={twMerge(barlow.className, "text-black py-10")} id="services">
+                <section className={twMerge(barlow.className, "text-black py-10")} id="specification">
                     <div className="container md:flex">
                         <div className="md:w-1/2 px-4 relative">
                             <Image src={SpecificationIllustration} alt="Specification illustration" className="h-auto w-[300px] "/>

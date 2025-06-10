@@ -26,10 +26,10 @@ export const ProductShowcase = () => {
 
         <ShowRoomCarousel />
 
-        <div className="px-10 pt-6 pb-12 flex flex-col lg:flex-row items-center gap-6 lg:gap-0">
+        <div className="px-10 pt-6 pb-12 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0">
 
-          <div className="flex flex-col md:flex-row gap-6 lg:gap-0">
-            <div className="mb-10 lg:px-3">
+          <div className="flex flex-row md:flex-row gap-6 lg:gap-0">
+            <div className="mb-2 lg:px-3">
               <CheckIcon className="h-6 w-6" />
               <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Machine Shop</h3>
               <p className="text-[14px] leading-[30px] tracking-tight"></p>
@@ -40,7 +40,7 @@ export const ProductShowcase = () => {
                 </button>
               </div> */}
             </div>
-            <div className="mb-10 lg:px-3">
+            <div className="mb-2 lg:px-3">
               <CheckIcon className="h-6 w-6" />
               <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Garment Shop</h3>
               <p className="text-[14px] leading-[30px] tracking-tight"></p>
@@ -53,8 +53,8 @@ export const ProductShowcase = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-6 lg:gap-0">
-            <div className="mb-10 lg:px-3">
+          <div className="flex flex-row md:flex-row gap-6 lg:gap-0">
+            <div className="mb-2 lg:px-3">
               <CheckIcon className="h-6 w-6" />
               <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">ICT Labs</h3>
               <p className="text-[14px] leading-[30px] tracking-tight"></p>
@@ -65,7 +65,7 @@ export const ProductShowcase = () => {
                 </button>
               </div> */}
             </div>
-            <div className="mb-10 lg:px-3">
+            <div className="mb-2 lg:px-3">
               <CheckIcon className="h-6 w-6" />
               <h3 className="text-lg md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Wood Shop</h3>
               <p className="text-[14px] leading-[30px] tracking-tight"></p>
