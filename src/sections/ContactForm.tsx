@@ -63,7 +63,7 @@ export const ContactForm = () => {
                             className="w-full text-slate-900 rounded-md py-2.5 px-4 border border-gray-300 text-sm outline-0 focus:border-blue-500" />
                         <input type='text' placeholder='Subject'
                             className="w-full text-slate-900 rounded-md py-2.5 px-4 border border-gray-300 text-sm outline-0 focus:border-blue-500" />
-                        <textarea placeholder='Message' rows="6"
+                        <textarea placeholder='Message' rows={6}
                             className="w-full text-slate-900 rounded-md px-4 border border-gray-300 text-sm pt-2.5 outline-0 focus:border-blue-500"></textarea>
                         <button type='button'
                             className="text-white bg-blue-600 hover:bg-blue-700 rounded-md text-sm font-medium px-4 py-2.5 w-full cursor-pointer border-0 mt-2">Send message</button>
