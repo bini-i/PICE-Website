@@ -31,50 +31,50 @@ export const Trainings = () => {
 
                 <div className="py-12 md:flex justify-center gap-6 flex-wrap">
                     <Link href="/capacity-building/trainings/automotive" className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
-                        <div className="">
+                        <div className="h-full flex flex-col justify-between">
                             <Image src={AutomotiveImage} alt="Automotive Image" className="" />
                             <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[25px] md:leading-[30px] font-bold tracking-tighter">Automotive</h3>
-                            <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p>
+                            {/* <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p> */}
                         </div>
                     </Link>
 
                     <Link href="/capacity-building/trainings/computer" className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
-                        <div className="">
+                        <div className="h-full flex flex-col justify-between">
                             <Image src={ComputerImage} alt="Computer Image" className="" />
                             <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[25px] md:leading-[30px] font-bold tracking-tighter">Computer</h3>
-                            <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p>
+                            {/* <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p> */}
                         </div>
                     </Link>
 
                     <Link href="/capacity-building/trainings/construction" className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
-                        <div className="">
+                        <div className="h-full flex flex-col justify-between">
                             <Image src={ConstructionImage} alt="Construction Image" className="" />
                             <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[25px] md:leading-[30px] font-bold tracking-tighter">Construction</h3>
-                            <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p>
+                            {/* <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p> */}
                         </div>
                     </Link>
 
                     <Link href="/capacity-building/trainings/electronics" className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
-                        <div className="">
+                        <div className="h-full flex flex-col justify-between">
                             <Image src={ElectronicsImage} alt="Electronics Image" className="" />
                             <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[25px] md:leading-[30px] font-bold tracking-tighter">Electronics</h3>
-                            <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p>
+                            {/* <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p> */}
                         </div>
                     </Link>
 
                     <Link href="/capacity-building/trainings/garment" className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
-                        <div className="">
+                        <div className="h-full flex flex-col justify-between">
                             <Image src={GarmentImage} alt="Garment Image" className="" />
                             <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[25px] md:leading-[30px] font-bold tracking-tighter">Garment</h3>
-                            <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p>
+                            {/* <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p> */}
                         </div>
                     </Link>
 
                     <Link href="/capacity-building/trainings/manufacturing" className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
-                        <div className="">
+                        <div className="h-full flex flex-col justify-between">
                             <Image src={ManufacturingImage} alt="Manufacturing Image" className="" />
                             <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[25px] md:leading-[30px] font-bold tracking-tighter">Manufacturing</h3>
-                            <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p>
+                            {/* <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p> */}
                         </div>
                     </Link>
 

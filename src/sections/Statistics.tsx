@@ -33,30 +33,30 @@ const inter = Inter({
 export const Statistics = () => {
     return (
         <section className="bg-white">
-            <div className={twMerge(barlow.className, "container flex justify-center gap-10 pt-10")}>
+            <div className={twMerge(barlow.className, "container flex justify-center gap-6 pt-10")}>
                 <div className="flex flex-col items-center">
-                    <div className="font-bold text-3xl text-[#000] mb-2">
+                    <div className="font-bold text-2xl text-[#000] mb-2">
                         <CountUp start={0} end={9} duration={5} delay={0}/>+
                     </div>
-                    <p className="font-semibold text-xl">Departments</p> 
+                    <p className="font-semibold text-l">Departments</p> 
                 </div>
                 <div className="flex flex-col items-center">
-                    <div className="font-bold text-3xl text-[#000] mb-2">
+                    <div className="font-bold text-2xl text-[#000] mb-2">
                         <CountUp start={0} end={100} duration={5} delay={0}/>+
                     </div>
-                    <p className="font-semibold text-xl">Staff</p> 
+                    <p className="font-semibold text-l">Staff</p> 
                 </div>
                 <div className="flex flex-col items-center">
-                    <div className="font-bold text-3xl text-[#000] mb-2">
+                    <div className="font-bold text-2xl text-[#000] mb-2">
                         <CountUp start={0} end={10000} duration={5} delay={0}/>+
                     </div>
-                    <p className="font-semibold text-xl">Graduates</p> 
+                    <p className="font-semibold text-l">Graduates</p> 
                 </div>
                 <div className="flex flex-col items-center">
-                    <div className="font-bold text-3xl text-[#000] mb-2">
+                    <div className="font-bold text-2xl text-[#000] mb-2">
                         <CountUp start={0} end={500} duration={5} delay={0}/>+
                     </div>
-                    <p className="font-semibold text-xl">Customers</p> 
+                    <p className="font-semibold text-l">Customers</p> 
                 </div>
             </div>
         </section>

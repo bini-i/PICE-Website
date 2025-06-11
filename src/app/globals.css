@@ -399,7 +399,7 @@
     }
 
     .grid-page-column-nav .nav-link {
-        color: #6d6d6d;
+        /* color: #6d6d6d; */
         font-size: 1.125rem;
         line-height: 1.2;
         padding: 1rem 1.75rem;

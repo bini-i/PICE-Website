@@ -29,7 +29,7 @@ function NavItem(props: any) {
 
   return (
     <div className="flex items-center" onMouseEnter={() => setOpen(!open)} onMouseLeave={() => setOpen(!open)} >
-      <Link className={ pathname === "/capacity-building" ? "px-3 ml-2 text-nowrap underline decoration-[#fcfb00] decoration-4 underline-offset-8 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer text-nowrap hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-8"} href="/capacity-building">Capacity Building</Link>
+      <Link className={ pathname === "/capacity-building" ? "px-3 ml-2 text-nowrap underline decoration-[#fcfb00] decoration-4 underline-offset-8 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer text-nowrap hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-8"} href="/">{props.title}</Link>
                       
       <svg className="h-4 w-4 fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path> </svg>
 
@@ -38,7 +38,7 @@ function NavItem(props: any) {
   )
 }
 
-function DropdownMenu() {
+function DropdownMenuCapacity() {
   const pathname = usePathname();
 
   function DropdownItem(props: any) {
@@ -62,6 +62,23 @@ function DropdownMenu() {
         <DropdownItem pathname="/capacity-building/trainings/welding">Welding Technology</DropdownItem>
         <DropdownItem pathname="/capacity-building/trainings/wood">Wood Works</DropdownItem>
       </div>
+  </div>
+  )
+}
+
+function DropdownMenuAbout() {
+  const pathname = usePathname();
+
+  function DropdownItem(props: any) {
+    return (
+      <Link className={ pathname === "/" ? "menu-item hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "menu-item hover:-translate-y-1 hover:scale-101"} href={props.pathname}>{props.children}</Link>
+    )
+  }
+  
+  return (
+    <div className='dropdown w-40  flex-col'>
+        <DropdownItem pathname="/about">Mission</DropdownItem>
+        <DropdownItem pathname="/offices">Offices</DropdownItem>
   </div>
   )
 }
@@ -115,13 +132,17 @@ export const Header = () => {
                 <ul className="hidden top-nav md:flex gap-2 lg:px-6">
                   <li><Link className={ pathname === "/" ? "underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"} href="/">Home</Link></li>
                   <li className="">
-                    <NavItem>
-                      <DropdownMenu />
+                    <NavItem title={"Capacity Building"}>
+                      <DropdownMenuCapacity />
                     </NavItem>
                   </li>
                   <li><Link className={ pathname === "/technology" ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-8 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-8"} href="/technology">Technology</Link></li>
                   <li><Link className={ pathname === "/consultation" ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"} href="/consultation">Consultation</Link></li>
-                  <li><Link className={ pathname === "/about" ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200" : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"} href="/about">About</Link></li>
+                  <li className="">
+                    <NavItem title={"About"}>
+                      <DropdownMenuAbout />
+                    </NavItem>
+                  </li>
                 </ul>
               </nav>
             </div>
