@@ -1,23 +1,36 @@
 console.log("script running")
 // Burger menus
 document.addEventListener('DOMContentLoaded', function() {
-    // open
-    const burger = document.getElementById('hamburger-button');
-    const closeButton = document.getElementById('close-button')
-    
-    burger.addEventListener('click', function() {
-        console.log("burger just got clicked")
 
-        const sidebarContainer = document.querySelector('.sidebar-container')
-        sidebarContainer.style.display = 'flex'
+    // --- Mobile Dropdown Toggle ---
+    const mobileDropdownButton = document.getElementById('mobile-dropdown-button');
+    const mobileDropdownMenu = document.getElementById('mobile-dropdown-menu');
+    const mobileDropdownArrow = document.getElementById('nav-drop-down-svg');
+
+    mobileDropdownButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        mobileDropdownMenu.classList.toggle('hidden');
+        mobileDropdownArrow.classList.toggle('rotate-180');
     });
 
-    closeButton.addEventListener('click', function() {
-        console.log("close button clicked")
 
-        const sidebarContainer = document.querySelector('.sidebar-container')
-        sidebarContainer.style.display = 'none'
-    })
+    // open
+    // const burger = document.getElementById('hamburger-button');
+    // const closeButton = document.getElementById('close-button')
+    
+    // burger.addEventListener('click', function() {
+    //     console.log("burger just got clicked")
+
+    //     const sidebarContainer = document.querySelector('.sidebar-container')
+    //     sidebarContainer.style.display = 'flex'
+    // });
+
+    // closeButton.addEventListener('click', function() {
+    //     console.log("close button clicked")
+
+    //     const sidebarContainer = document.querySelector('.sidebar-container')
+    //     sidebarContainer.style.display = 'none'
+    // })
 
 
     // Leaflet Map 

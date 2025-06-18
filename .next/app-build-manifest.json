@@ -12,64 +12,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/about/page": [
+    "/capacity-building/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/about/page.css",
-      "static/chunks/app/about/page.js"
+      "static/css/app/capacity-building/page.css",
+      "static/chunks/app/capacity-building/page.js"
     ],
-    "/offices/page": [
+    "/technology/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/offices/page.css",
-      "static/chunks/app/offices/page.js"
-    ],
-    "/capacity-building/trainings/automotive/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/capacity-building/trainings/automotive/page.css",
-      "static/chunks/app/capacity-building/trainings/automotive/page.js"
-    ],
-    "/offices/dean/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/offices/dean/page.css",
-      "static/chunks/app/offices/dean/page.js"
-    ],
-    "/capacity-building/trainings/computer/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/capacity-building/trainings/computer/page.css",
-      "static/chunks/app/capacity-building/trainings/computer/page.js"
-    ],
-    "/offices/capacity-vice-dean/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/offices/capacity-vice-dean/page.css",
-      "static/chunks/app/offices/capacity-vice-dean/page.js"
-    ],
-    "/offices/research-vice-dean/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/offices/research-vice-dean/page.css",
-      "static/chunks/app/offices/research-vice-dean/page.js"
-    ],
-    "/offices/technology-vice-dean/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/offices/technology-vice-dean/page.css",
-      "static/chunks/app/offices/technology-vice-dean/page.js"
-    ],
-    "/consultation/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/consultation/page.css",
-      "static/chunks/app/consultation/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/technology/page.css",
+      "static/chunks/app/technology/page.js"
     ]
   }
 }
