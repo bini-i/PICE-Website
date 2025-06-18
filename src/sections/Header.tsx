@@ -244,10 +244,31 @@ export const Header = () => {
                   { headerDropDownOpen ? 
                     <div className="header-dropdown-content bg-[#47470a]">
                       <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/technology">Automotive</Link>
+                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/automotive">Automotive</Link>
                       </li>
                       <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/consultation">Computer Science</Link>
+                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/computer">Computer Science</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/construction">Construction Technology</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/electronics">Electrical Electronics</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/garment">Garment</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/leather">Leather</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/manufacturing">Manufacturing</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/welding">Welding</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/wood">Wood</Link>
                       </li>
                     </div> : ""
                   }

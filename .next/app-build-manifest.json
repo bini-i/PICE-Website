@@ -23,6 +23,12 @@
       "static/chunks/main-app.js",
       "static/css/app/technology/page.css",
       "static/chunks/app/technology/page.js"
+    ],
+    "/capacity-building/trainings/wood/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/capacity-building/trainings/wood/page.css",
+      "static/chunks/app/capacity-building/trainings/wood/page.js"
     ]
   }
 }

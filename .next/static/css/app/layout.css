@@ -1924,35 +1924,44 @@ Footer {
 .\[mask-image\:linear-gradient\(to_right\2c transparent\2c black\2c transparent\)\] {
   mask-image: linear-gradient(to right,transparent,black,transparent);
 }
+
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
+
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
+
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
+
 .hover\:decoration-\[\#fcfb00\]:hover {
   text-decoration-color: #fcfb00;
 }
+
 .focus\:border-blue-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
+
 @media not all and (min-width: 1200px) {
 
   .max-lg\:max-w-2xl {
@@ -1963,6 +1972,7 @@ Footer {
     max-width: 32rem;
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:absolute {
@@ -2138,6 +2148,7 @@ Footer {
     line-height: 60px;
   }
 }
+
 @media (min-width: 1200px) {
 
   .lg\:flex {
@@ -2179,9 +2190,11 @@ Footer {
     line-height: 1;
   }
 }
+
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
 }
+
 @media (prefers-color-scheme: dark) {
 
   .dark\:text-black {
