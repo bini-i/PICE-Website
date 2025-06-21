@@ -349,7 +349,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      Consultation
+
       <div className="banner-gradient backdrop-blur-sm -z-10"></div>
     </header>
   );

@@ -18,7 +18,12 @@ import { Database } from "lucide-react";
 import { PanelsTopLeft } from "lucide-react";
 import { PanelTop } from "lucide-react";
 
-export const Menus = [
+interface MenuItem {
+  name: string;
+  subMenu?: { name: string}[];
+}
+
+export const Menus: MenuItem[] = [
   {
     name: "Home",
     // subMenu: [
