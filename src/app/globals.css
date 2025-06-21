@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .flex-center {
+      @apply flex items-center;
+    }
+    .flex-center-between {
+      @apply flex items-center justify-between;
+    }
+}
+
 @layer components {
     /* General */
 
@@ -9,6 +18,10 @@
         line-height: 1.555556rem;
     }
     
+    .sub-menu {
+        @apply absolute top-[4.2rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-white/[0.04];
+    }
+
     /* background-clip:text not working on chrome */
     .bg-clip-text {
         -webkit-background-clip: text;
@@ -23,7 +36,7 @@
     }
 
     header nav li {
-        height: 40px;
+        /* height: 40px; */
     }
 
     /* header nav li:hover {
@@ -53,7 +66,7 @@
 
     .dropdown {
         position: absolute;
-        top: 58px;
+        top: 50px;
         width: 500px;
         background-color: rgba(56, 56, 11, 0.9);
         border: 1px solid #95951029;
@@ -121,6 +134,7 @@
 
     .sidebar .menu-item .menu-item-link {
         /* padding: 1rem 1.75rem; */
+        width: 100%;
         padding-left: 1.75rem;
         padding-right: 1.75rem;
         font-weight: 500;
@@ -255,7 +269,23 @@
         opacity: 80%;
         
         width: 100%;
-        height: 10%;
+        height: 125%;
+
+        z-index: 20;
+        position: absolute;
+        top: 0;
+    }
+
+    .banner-gradient-full-screen {
+        /* background: linear-gradient(53deg,rgba(20, 20, 0, 0.72) 0%, rgba(56, 56, 0, 0.65) 22%, rgba(0, 104, 148, 0.38) 32%, rgba(0, 104, 148, 0) 42%); */
+        
+        /* background: linear-gradient(179deg,rgba(0, 84, 120, 1) 0%, rgba(0, 87, 125, 0.81) 10%, rgba(0, 120, 171, 0) 100%); */
+
+        background: linear-gradient(230deg,rgba(99, 99, 0, 1) 0%, rgba(0, 29, 56, 1) 71%);
+        opacity: 100%;
+        
+        width: 100%;
+        height: 100%;
 
         z-index: 20;
         position: absolute;

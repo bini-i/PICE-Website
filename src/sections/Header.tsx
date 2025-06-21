@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import ArrowRight from "@/assets/arrow-right.svg";
 import Logo from "@/assets/Logo.png";
 import Image from "next/image";
@@ -21,6 +22,9 @@ import { faClose, faHamburger } from "@fortawesome/free-solid-svg-icons";
 
 import { Barlow_Semi_Condensed } from "next/font/google";
 import { twMerge } from "tailwind-merge";
+
+import { Menu, X, ChevronDown } from "lucide-react";
+import { Menus } from "./../app/utils.js";
 
 
 const barlow = Barlow_Semi_Condensed({
@@ -151,9 +155,27 @@ export const Header = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen((cur) => !cur);
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [clicked, setClicked] = useState(null);
+  const toggleDrawer = () => {
+    setIsOpen(!isOpen);
+    setClicked(null);
+  };
+
   const [headerDropDownOpen, setheaderDropDownOpen] = React.useState(false);
   const handleheaderDropDownOpen = () => setheaderDropDownOpen((cur) => !cur);
-
+  
+  const subMenuDrawer = {
+    enter: {
+      height: "auto",
+      overflow: "hidden",
+    },
+    exit: {
+      height: 0,
+      overflow: "hidden",
+    },
+  };
+  
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -163,7 +185,7 @@ export const Header = () => {
 
   return (
     <header
-      className="sticky top-0 backdrop-blur-sm z-40"
+      className="h-16 lg:h-20 flex items-center sticky top-0 backdrop-blur-sm z-40"
       data-indicator=".overlay"
       data-indicator-item="button"
     >
@@ -174,120 +196,84 @@ export const Header = () => {
           </div>
         </div> */}
 
-      <div className="py-5 backdrop-blur-sm">
+      <div className="backdrop-blur-sm w-full">
         <div className="container">
           <div className="flex items-center justify-between">
             <a href="/">
-              <div className="flex gap-3">
+              <div className="flex gap-3 items-center">
                 <Image
                   src={Logo}
                   alt="PICE Logo"
-                  height={60}
-                  width={60}
-                  className="pr-3 border-r-2 border-[#fff]"
+                  // height={40}
+                  // width={40}
+                  className="size-8"
                 />
-                <div className="flex flex-col justify-center">
-                  <div className="text-xl text-[#fff] font-bold">PICE</div>
-                  <div className="text-sm text-[#fff] font-bold">
+                <div className="flex flex-col justify-center pl-3 border-l-2 border-[#fff]">
+                  <div className="text-[15px] leading-5 lg:text-lg lg:leading-7 text-[#fff] font-bold">PICE</div>
+                  <div className="text-[12px] leading-4 lg:text-sm lg:leading-5 text-[#fff] font-bold">
                     Since 1962
                   </div>
                 </div>
               </div>
             </a>
             <nav className="md:flex items-center">
-              <span
-                id="hamburger-button"
-                className="p-2 cursor-pointer lg:hidden text-[#fcfb00]"
-                onClick={handleOpen}
-              >
-                {open ? "" : <MenuIcon className="h-8 w-8 lg:hidden" />}
-
-                {/* { open ? (
-                    <FontAwesomeIcon icon={faClose} size="2x" className="h-10 w-10 "/>
-                  ): (
-                    <MenuIcon className="h-8 w-8 lg:hidden"/>
-                  )} */}
-
-                {/* <FontAwesomeIcon icon={faHamburger} size="2x" className="h-7 w-7 "/> */}
-              </span>
-
-              <ul className={open ? "sidebar-container z-999" : "hidden"}>
-                <div className="sidebar">
-                  <div className="close-btn-container">
-                    <div id="close-button">
-                      <span
-                        id="hamburger-button"
-                        className="p-2 cursor-pointer lg:hidden text-[#fcfb00]"
-                        onClick={handleOpen}
-                      >
-                        {/* <span className="text-white">Close</span> */}
-
-                        <FontAwesomeIcon
-                          icon={faClose}
-                          size="2x"
-                          className="h-10 w-10 "
-                        />
-                      </span>
-
-                      {/* <a href="#"><CloseIcon className=""/></a> */}
-                    </div>
-                  </div>
-                  <li className="menu-item">
-                    <a className="menu-item-link" href="/">Home</a>
-                  </li>
-                  
-                  <li className="menu-item header-dropbtn" onClick={handleheaderDropDownOpen}>
-                    <span className="pr-0 menu-item-link">Capacity Building</span>
-                    <svg className="w-6 h-6" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </li>
-
-                  { headerDropDownOpen ? 
-                    <div className="header-dropdown-content bg-[#47470a]">
-                      <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/automotive">Automotive</Link>
-                      </li>
-                      <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/computer">Computer Science</Link>
-                      </li>
-                      <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/construction">Construction Technology</Link>
-                      </li>
-                      <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/electronics">Electrical Electronics</Link>
-                      </li>
-                      <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/garment">Garment</Link>
-                      </li>
-                      <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/leather">Leather</Link>
-                      </li>
-                      <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/manufacturing">Manufacturing</Link>
-                      </li>
-                      <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/welding">Welding</Link>
-                      </li>
-                      <li className="menu-item">
-                        <Link className="ml-10 menu-item-link" href="/capacity-building/trainings/wood">Wood</Link>
-                      </li>
-                    </div> : ""
+              <div className="lg:hidden">
+                <button className="lg:hidden z-[999] relative" onClick={toggleDrawer}>
+                  {
+                    isOpen ? <X className="text-[#fcfb00]"/> : <Menu className="text-[#fcfb00]"/>
                   }
-                  
-                  <li className="menu-item">
-                    <Link className="menu-item-link" href="/technology">Technology</Link>
-                  </li>
-                  <li className="menu-item">
-                    <Link className="menu-item-link" href="/consultation">Consultation</Link>
-                  </li>
-                  <li className="menu-item">
-                    <Link className="menu-item-link" href="/about">About</Link>
-                  </li>
+                </button>
+              </div>
 
-                  
-
-                </div>
-              </ul>
-
+      {/* <motion.div
+        className="fixed left-0 right-0 top-16 overflow-y-auto h-full bg-[#18181A] backdrop-blur text-white p-6 pb-20"
+        initial={{ x: "-100%" }}
+        animate={{ x: isOpen ? "0%" : "-100%" }}
+      > */}
+      <motion.div
+        className="banner-gradient-full-screen fixed h-screen left-0 right-0 top-16 overflow-y-auto bg-[#18181A] backdrop-blur text-white p-6 pb-20"
+        initial={{ x: "-100%" }}
+        animate={{ x: isOpen ? "0%" : "-100%" }}
+      >
+        <ul>
+          {Menus.map(({ name, subMenu }, i) => {
+            const isClicked = clicked === i;
+            const hasSubMenu = subMenu?.length;
+            return (
+              <li key={name} className="">
+                <span
+                  className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
+                  onClick={() => setClicked(isClicked ? null : i)}
+                >
+                  {name}
+                  {hasSubMenu && (
+                    <ChevronDown
+                      className={`ml-auto ${isClicked && "rotate-180"} `}
+                    />
+                  )}
+                </span>
+                {hasSubMenu && (
+                  <motion.ul
+                    initial="exit"
+                    animate={isClicked ? "enter" : "exit"}
+                    variants={subMenuDrawer}
+                    className="ml-5"
+                  >
+                    {subMenu.map(({ name }) => (
+                      <li
+                        key={name}
+                        className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
+                      >
+                        {name}
+                      </li>
+                    ))}
+                  </motion.ul>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </motion.div>
               {/* <!-- Mobile menu, show/hide based on menu state. --> */}
               {/* <div className="" id="mobile-menu">
                   <div className="space-y-1 px-2 pt-2 pb-3"> */}
@@ -312,10 +298,17 @@ export const Header = () => {
                     Home
                   </Link>
                 </li>
-                <li className="">
-                  <NavItem title={"Capacity Building"}>
-                    <DropdownMenuCapacity />
-                  </NavItem>
+                <li>
+                  <Link
+                    className={
+                      pathname === "/"
+                        ? "underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200"
+                        : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"
+                    }
+                    href="/"
+                  >
+                    Latest
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -326,8 +319,13 @@ export const Header = () => {
                     }
                     href="/technology"
                   >
-                    Technology
+                    Admission
                   </Link>
+                </li>
+                <li className="">
+                  <NavItem title={"Academics"}>
+                    <DropdownMenuCapacity />
+                  </NavItem>
                 </li>
                 <li>
                   <Link
@@ -338,7 +336,7 @@ export const Header = () => {
                     }
                     href="/consultation"
                   >
-                    Consultation
+                    Innovation
                   </Link>
                 </li>
                 <li className="">
@@ -351,8 +349,8 @@ export const Header = () => {
           </div>
         </div>
       </div>
-
-      <div className="banner-gradient backdrop-blur-sm h-full -z-10"></div>
+      Consultation
+      <div className="banner-gradient backdrop-blur-sm -z-10"></div>
     </header>
   );
 };
