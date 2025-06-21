@@ -156,7 +156,7 @@ export const Header = () => {
   const handleOpen = () => setOpen((cur) => !cur);
 
   const [isOpen, setIsOpen] = useState(false);
-  const [clicked, setClicked] = useState(null);
+  const [clicked, setClicked] = useState<number | null>(null);
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
     setClicked(null);
