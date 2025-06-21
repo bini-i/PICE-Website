@@ -24,7 +24,7 @@ import { Barlow_Semi_Condensed } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Menus } from "./../app/utils.tsx";
+import { Menus } from "./../app/utils";
 
 
 const barlow = Barlow_Semi_Condensed({
