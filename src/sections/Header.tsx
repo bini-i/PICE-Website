@@ -231,7 +231,7 @@ export const Header = () => {
         animate={{ x: isOpen ? "0%" : "-100%" }}
       > */}
       <motion.div
-        className="banner-gradient-full-screen fixed h-screen left-0 right-0 top-16 overflow-y-auto bg-[#18181A] backdrop-blur text-white p-6 pb-20"
+        className="banner-gradient-full-screen fixed h-screen left-0 right-0 top-12 overflow-y-auto bg-[#18181A] backdrop-blur text-white p-6 pb-20"
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
@@ -242,7 +242,7 @@ export const Header = () => {
             return (
               <li key={name} className="">
                 <span
-                  className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
+                  className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative font-[600]"
                   onClick={() => setClicked(isClicked ? null : i)}
                 >
                   {name}
