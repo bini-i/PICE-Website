@@ -22,6 +22,24 @@ const config: Config = {
         },
       },
     },
+
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+      },
+      screens: {
+        // Define ALL your desired container max-widths here,
+        // as you are completely overriding the defaults.
+        sm: '1400px',  //375
+        md: '1400px',  //768
+        lg: '1400px',  //1200
+        // xl: '1140px',
+        // '2xl': '1320px',
+        // '3xl': '1400px', // Add custom ones too
+      },
+    },
+
   },
   plugins: [],
 };

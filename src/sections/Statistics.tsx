@@ -36,13 +36,13 @@ export const Statistics = () => {
             <div className={twMerge(barlow.className, "container flex justify-center gap-6 pt-10")}>
                 <div className="flex flex-col items-center">
                     <div className="font-bold text-2xl text-[#000] mb-2">
-                        <CountUp start={0} end={9} duration={10} delay={0}/>
+                        <CountUp start={0} end={7} duration={10} delay={0}/>
                     </div>
                     <p className="font-semibold text-l">Departments</p> 
                 </div>
                 <div className="flex flex-col items-center">
                     <div className="font-bold text-2xl text-[#000] mb-2">
-                        <CountUp start={0} end={200} duration={10} delay={0}/>+
+                        <CountUp start={0} end={243} duration={10} delay={0}/>+
                     </div>
                     <p className="font-semibold text-l">Staff</p> 
                 </div>
