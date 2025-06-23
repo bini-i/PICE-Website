@@ -1,7 +1,7 @@
 "use client";
 
 import { Header } from "@/sections/Header";
-import { Hero } from "@/sections/Hero";
+import { Hero } from "@/sections/hero/Hero";
 import { LogoTicker } from "@/sections/LogoTicker";
 import { Statistics } from "@/sections/Statistics";
 import { ProductShowcase } from "@/sections/ProductShowcase";
@@ -48,8 +48,8 @@ export default function Home() {
 
   return (
     <>
-      <div className={twMerge(inter.className, "hero-wrapper")}>
-        <div className="hero-gradient">
+      <div className={twMerge(inter.className, "")}>
+        <div className="">
             <Header />
             <Hero />
         </div>

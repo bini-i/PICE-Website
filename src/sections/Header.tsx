@@ -185,7 +185,7 @@ export const Header = () => {
 
   return (
     <header
-      className="h-16 lg:h-20 flex items-center sticky top-0 backdrop-blur-sm z-40"
+      className="h-16 lg:h-20 flex items-center sticky top-0 backdrop-blur-sm z-50"
       data-indicator=".overlay"
       data-indicator-item="button"
     >
@@ -301,11 +301,11 @@ export const Header = () => {
                 <li>
                   <Link
                     className={
-                      pathname === "/"
+                      pathname === "/latest"
                         ? "underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200"
                         : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"
                     }
-                    href="/"
+                    href="/latest"
                   >
                     Latest
                   </Link>
@@ -313,11 +313,11 @@ export const Header = () => {
                 <li>
                   <Link
                     className={
-                      pathname === "/technology"
+                      pathname === "/admission"
                         ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-8 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200"
                         : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-8"
                     }
-                    href="/technology"
+                    href="/admission"
                   >
                     Admission
                   </Link>
@@ -330,11 +330,11 @@ export const Header = () => {
                 <li>
                   <Link
                     className={
-                      pathname === "/consultation"
+                      pathname === "/innovation"
                         ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200"
                         : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"
                     }
-                    href="/consultation"
+                    href="/innovation"
                   >
                     Innovation
                   </Link>
