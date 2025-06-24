@@ -1,12 +1,12 @@
 import Slider from "react-slick";
 // For example, in pages/index.js or components/YourProductSection.js
-import DynamicAliceCarousel from './DynamicAliceCarousel'; // Adjust the path as needed
+// import DynamicAliceCarousel from './DynamicAliceCarousel'; // Adjust the path as needed
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Img1 from "./../../assets/hero-slide1.jpg";
-import Img2 from "./../../assets/hero-slide2.jpg";
-import Img3 from "./../../assets/hero-slide3.jpg";
-import Img4 from "./../../assets/hero-slide4.jpg";
+import Img1 from "@/assets/hero-slide1.jpg";
+import Img2 from "@/assets/hero-slide2.jpg";
+import Img3 from "@/assets/hero-slide3.jpg";
+import Img4 from "@/assets/hero-slide4.jpg";
 
 const Carousel = () => {
     const slideImages = [
@@ -46,7 +46,7 @@ const Carousel = () => {
                         <div
                             className='w-full h-screen bg-cover bg-center'
                             style={{
-                                backgroundImage: `url(${slideImage.url})`,
+                                backgroundImage: `url(${slideImage.url.src})`,
                             }}
                         ></div>
                     </div>

@@ -11,7 +11,7 @@ export const Hero = () => {
     <div className="min-h-screen flex flex-col justify-center">
       <section className="pt-32 pb-20 overflow-x-clip">
 
-        <div className="absolute top-0 left-0 w-full min-h-dvh z-50">
+        <div className="absolute top-0 left-0 w-full min-h-dvh z-40 overflow-hidden">
           <Carousel />
         </div>
 
