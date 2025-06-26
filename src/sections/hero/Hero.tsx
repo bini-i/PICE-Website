@@ -8,7 +8,7 @@ import Carousel from "./Carousel";
 export const Hero = () => {
 
   return (
-    <div className="min-h-screen flex flex-col justify-center">
+    <div className="min-h-screen flex flex-col justify-center relative z-0">
       <section className="pt-32 pb-20 overflow-x-clip">
 
         <div className="absolute top-0 left-0 w-full min-h-dvh z-40 overflow-hidden">
