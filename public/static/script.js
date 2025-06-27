@@ -2,6 +2,25 @@ console.log("script running")
 // Burger menus
 document.addEventListener('DOMContentLoaded', function() {
 
+
+    // Latest news section starts here
+
+    const modal = document.getElementById("exampleModalWeb3");
+    const openModalButton = document.getElementById("openModalButton");
+    const closeModalButton = document.getElementById("closeModalButton");
+
+    openModalButton.addEventListener("click", () => {
+      modal.classList.remove("opacity-0", "pointer-events-none");
+      modal.classList.add("opacity-100");
+    });
+
+    closeModalButton.addEventListener("click", () => {
+      modal.classList.add("opacity-0", "pointer-events-none");
+      modal.classList.remove("opacity-100");
+    });
+
+    // Latest news section ends here
+
     // --- Mobile Dropdown Toggle ---
     const mobileDropdownButton = document.getElementById('mobile-dropdown-button');
     const mobileDropdownMenu = document.getElementById('mobile-dropdown-menu');
