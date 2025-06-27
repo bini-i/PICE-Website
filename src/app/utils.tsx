@@ -20,12 +20,14 @@ import { PanelTop } from "lucide-react";
 
 interface MenuItem {
   name: string;
-  subMenu?: { name: string}[];
+  subMenu?: { name: string, url: string}[];
+  url: string;
 }
 
 export const Menus: MenuItem[] = [
   {
     name: "Home",
+    url: "/",
     // subMenu: [
     //   {
     //     name: "Design",
@@ -43,20 +45,64 @@ export const Menus: MenuItem[] = [
   },
   {
     name: "Latest",
+    url: "/latest",
   },
   {
     name: "Admission",
+    url: "/admission"
   },
   {
     name: "Academics",
+    url: "/academics",
+
+    subMenu: [
+      {
+        name: "Automotive",
+        url: "/capacity-building/trainings/automotive"
+      },
+      {
+        name: "Computer Science",
+        url: "/capacity-building/trainings/computer"
+      },
+      {
+        name: "Construction Technology",
+        url: "/capacity-building/trainings/construction"
+      },
+      {
+        name: "Electrical Electronics",
+        url: "/capacity-building/trainings/electronics"
+      },
+      {
+        name: "Garment",
+        url: "/capacity-building/trainings/garment"
+      },
+      {
+        name: "Leather Technology",
+        url: "/capacity-building/trainings/leather"
+      },
+      {
+        name: "Manufacturing Technology",
+        url: "/capacity-building/trainings/manufacturing"
+      },
+      {
+        name: "Welding Technology",
+        url: "/capacity-building/trainings/welding"
+      },
+      {
+        name: "Wood Works",
+        url: "/capacity-building/trainings/wood"
+      },
+    ],
   },
   {
     name: "Innovation",
+    url: "/innovation"
   },
   // {
   //   name: "Offices",
   // },
   {
     name: "About",
+    url: "/about"
   },
 ];

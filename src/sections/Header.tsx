@@ -236,22 +236,29 @@ export const Header = () => {
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
         <ul>
-          {Menus.map(({ name, subMenu }, i) => {
+          {Menus.map(({ name, url, subMenu }, i) => {
             const isClicked = clicked === i;
             const hasSubMenu = subMenu?.length;
             return (
               <li key={name} className="">
-                <span
-                  className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative font-[600]"
-                  onClick={() => setClicked(isClicked ? null : i)}
-                >
-                  {name}
-                  {hasSubMenu && (
-                    <ChevronDown
-                      className={`ml-auto ${isClicked && "rotate-180"} `}
-                    />
-                  )}
-                </span>
+                {
+                  hasSubMenu ? (
+                    <span 
+                      className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative font-[600]"
+                      onClick={() => setClicked(isClicked ? null : i)}
+                    >
+                      {name}
+                      <ChevronDown
+                        className={`ml-auto ${isClicked && "rotate-180"} `}
+                      />
+                    </span>
+                  ) : (
+                    <Link className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative font-[600]" href={url}>
+                      {name}
+                    </Link>
+                  )
+                }
+
                 {hasSubMenu && (
                   <motion.ul
                     initial="exit"
@@ -259,12 +266,14 @@ export const Header = () => {
                     variants={subMenuDrawer}
                     className="ml-5"
                   >
-                    {subMenu.map(({ name }) => (
+                    {subMenu.map(({ name, url }) => (
                       <li
                         key={name}
                         className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                       >
-                        {name}
+                        <Link href={url}>
+                          {name}
+                        </Link>
                       </li>
                     ))}
                   </motion.ul>
