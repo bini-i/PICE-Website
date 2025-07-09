@@ -158,7 +158,7 @@ export default function Home() {
                         </div>     
                     </div>
 
-                    <div className="mt-8">
+                    {/* <div className="mt-8">
                         <div className="flex items-center">
                             <h2 className="title-type-2 my-6 text-[#0384d2] w-full"> A student’s perspective</h2>
                         </div>
@@ -184,7 +184,7 @@ export default function Home() {
                             </div>
 
                         </div>
-                    </div>
+                    </div> */}
 
               </div>
 

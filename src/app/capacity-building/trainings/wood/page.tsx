@@ -58,7 +58,7 @@ export default function Home() {
         </div>
 
         <div className="banner-title container">
-            <h1 className={twMerge(merriweather.className)}>Wood Works Department</h1>
+            <h1 className={twMerge(merriweather.className, "text-4xl md:text-6xl")}>Wood Works Department</h1>
         </div>
 
       </section>
@@ -177,7 +177,7 @@ export default function Home() {
                         </div>     
                     </div>
 
-                    <div className="mt-8">
+                    {/* <div className="mt-8">
                         <div className="flex items-center">
                             <h2 className="title-type-2 my-6 text-[#0384d2] w-full"> A student’s perspective</h2>
                         </div>
@@ -203,7 +203,7 @@ export default function Home() {
                             </div>
 
                         </div>
-                    </div>
+                    </div> */}
 
               </div>
 
