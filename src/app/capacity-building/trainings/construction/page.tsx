@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         <div className="banner-title container">
-            <h1 className={twMerge(merriweather.className)}>Constuction Technology Department</h1>
+            <h1 className={twMerge(merriweather.className, "text-4xl md:text-6xl")}>Constuction Technology Department</h1>
         </div>
 
       </section>

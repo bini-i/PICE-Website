@@ -98,9 +98,10 @@ export const Menus: MenuItem[] = [
     name: "Innovation",
     url: "/innovation"
   },
-  // {
-  //   name: "Offices",
-  // },
+  {
+    name: "Offices",
+    url: "/offices"
+  },
   {
     name: "About",
     url: "/about"

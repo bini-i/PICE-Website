@@ -48,7 +48,7 @@ function NavItem(props: any) {
         className={
           pathname === "/capacity-building"
             ? "px-3 ml-2 text-nowrap underline decoration-[#fcfb00] decoration-4 underline-offset-8 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200"
-            : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer text-nowrap hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-8"
+            : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer text-nowrap hover:underline hover:decoration-[#text-gray-600] decoration-4 underline-offset-8"
         }
         href="/"
       >
@@ -271,7 +271,7 @@ export const Header = () => {
                         key={name}
                         className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                       >
-                        <Link href={url}>
+                        <Link href={url} className="text-[#f7f799]">
                           {name}
                         </Link>
                       </li>
@@ -348,11 +348,37 @@ export const Header = () => {
                     Innovation
                   </Link>
                 </li>
-                <li className="">
+
+                <li>
+                  <Link
+                    className={
+                      pathname === "/innovation"
+                        ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200"
+                        : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"
+                    }
+                    href="/offices"
+                  >
+                    Offices
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    className={
+                      pathname === "/innovation"
+                        ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200"
+                        : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"
+                    }
+                    href="/about"
+                  >
+                    About
+                  </Link>
+                </li>
+                {/* <li className="">
                   <NavItem title={"About"}>
                     <DropdownMenuAbout />
                   </NavItem>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>

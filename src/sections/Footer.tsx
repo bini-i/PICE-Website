@@ -67,7 +67,7 @@ export const Footer = () => {
                 <a className="text-[#fff] underline text-xl footer-nav-link-item" href="/consultation/#specification">Specification</a>
               </li>
               <li className="footer-nav-link-item">
-                <a className="text-[#fff] underline text-xl footer-nav-link-item" href="/consultation/#fuel">Gas measurement</a>
+                <a className="text-[#fff] underline text-xl footer-nav-link-item" href="/consultation/#fuel">Vehicle Fuel Measurement</a>
               </li>
               <li className="footer-nav-link-item">
                 <a className="text-[#fff] underline text-xl footer-nav-link-item" href="/consultation/#skill">Skill Evaluation</a>

@@ -307,7 +307,7 @@
         font-style: normal;
         line-height: 1.4;
         color: #fff;
-        font-size: 3.75rem;
+        /* font-size: 3.75rem; */
         padding: 17px 34px 26px 34px;
         background-color: rgba(3,132,210,0.8);
         width: min-content;
