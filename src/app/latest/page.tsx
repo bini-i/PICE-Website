@@ -45,7 +45,7 @@ export default function Home() {
             <div className="flex flex-col justify-center relative z-0">
 
     
-              <div className="relative w-full h-[35vh] flex flex-col justify-center">
+              <div className=" w-full h-[35vh] flex flex-col justify-center">
                 <div className="top-0 left-0 w-full z-40 overflow-hidden">
                   <div
                       className='absolute inset-0 bg-cover bg-center object-cover'

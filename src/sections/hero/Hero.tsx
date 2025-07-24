@@ -8,7 +8,7 @@ import Carousel from "./Carousel";
 export const Hero = () => {
 
   return (
-    <div className="min-h-screen flex flex-col justify-center relative z-0">
+    <div className="min-h-screen flex flex-col justify-center z-0">
       <section className="pt-32 pb-20 overflow-x-clip">
 
         <div className="absolute top-0 left-0 w-full min-h-dvh z-40 overflow-hidden">
@@ -19,7 +19,7 @@ export const Hero = () => {
             
         </div>
 
-        <div className="relative container w-full z-50">
+        <div className="relative container w-full z-40">
           <div className="md:flex items-center">
             <div className="md:w-[478px] flex flex-col items-center md:block">
               {/* <div className="tag text-[#fff] font-semibold">AU infront of Jegnoch</div> */}

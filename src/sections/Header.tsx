@@ -144,7 +144,7 @@ function DropdownMenuAbout() {
   return (
     <div className="dropdown w-40  flex-col">
       <DropdownItem pathname="/about">Mission</DropdownItem>
-      <DropdownItem pathname="/offices">Offices</DropdownItem>
+      <DropdownItem pathname="/offices/dean">Offices</DropdownItem>
     </div>
   );
 }
@@ -185,7 +185,7 @@ export const Header = () => {
 
   return (
     <header
-      className="h-16 lg:h-20 flex items-center sticky top-0 backdrop-blur-sm z-50"
+      className="h-16 lg:h-20 flex items-center fixed w-full top-0 backdrop-blur-sm z-50"
       data-indicator=".overlay"
       data-indicator-item="button"
     >
@@ -231,7 +231,7 @@ export const Header = () => {
         animate={{ x: isOpen ? "0%" : "-100%" }}
       > */}
       <motion.div
-        className="banner-gradient-full-screen fixed h-screen left-0 right-0 top-12 overflow-y-auto bg-[#18181A] backdrop-blur text-white p-6 pb-20"
+        className="banner-gradient-full-screen absolute z-50 min-h-screen left-0 right-0 top-12 overflow-y-auto bg-[#18181A] backdrop-blur text-white p-6 pb-20"
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
@@ -343,7 +343,7 @@ export const Header = () => {
                         ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200"
                         : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"
                     }
-                    href="/innovation"
+                    href="/technology"
                   >
                     Innovation
                   </Link>
@@ -352,11 +352,11 @@ export const Header = () => {
                 <li>
                   <Link
                     className={
-                      pathname === "/innovation"
+                      (pathname === "/offices/dean" || pathname === "/offices/capacity-vice-dean" || pathname === "/offices/research-vice-dean" || pathname === "/offices/technology-vice-dean")
                         ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200"
                         : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"
                     }
-                    href="/offices"
+                    href="/offices/dean"
                   >
                     Offices
                   </Link>
@@ -365,7 +365,7 @@ export const Header = () => {
                 <li>
                   <Link
                     className={
-                      pathname === "/innovation"
+                      pathname === "/about"
                         ? "px-3 ml-2 underline decoration-[#fcfb00] decoration-4 underline-offset-4 hover:-translate-y-1 hover:scale-101 hover:cursor-pointer transition duration-200"
                         : "hover:-translate-y-1 hover:scale-101 hover:cursor-pointer hover:underline hover:decoration-[#fcfb00] decoration-4 underline-offset-4"
                     }

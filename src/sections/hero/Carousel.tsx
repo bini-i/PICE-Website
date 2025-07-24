@@ -7,12 +7,13 @@ import Img1 from "@/assets/hero-slide1.jpg";
 import Img2 from "@/assets/hero-slide2.jpg";
 import Img3 from "@/assets/hero-slide3.jpg";
 import Img4 from "@/assets/hero-slide4.jpg";
+import Img5 from "@/assets/hero-slide5.jpg";
 
 const Carousel = () => {
     const slideImages = [
         {
-            id: 4,
-            url: Img4,
+            id: 5,
+            url: Img5,
         },
         {
             id: 1,
@@ -25,6 +26,10 @@ const Carousel = () => {
         {
             id: 3,
             url: Img3,
+        },
+        {
+            id: 4,
+            url: Img4,
         },
     ];
 

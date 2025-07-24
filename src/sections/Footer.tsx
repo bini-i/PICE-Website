@@ -19,7 +19,7 @@ export const Footer = () => {
   return (
     <footer className={twMerge(barlow.className, "bg-[#0384d2] text-[#BCBCBC] py-10")}>
       <div className="container">
-        <div className="footer-controller lg:flex">
+        <div className="footer-controller lg:flex justify-center">
           <div className="footer-column-left md:border-r-2 my-8 md:pr-6">
             <div className="inline-flex items-center">
               <div className="footer-logo-outer-border">
@@ -77,7 +77,7 @@ export const Footer = () => {
 
           <div className="footer-column-right my-8 md:pl-8 lg:pt-16">
             <div className="flex gap-6 mt-6 footer-social-list">
-              <a className="footer-social-item">
+              <a className="footer-social-item" href="https://t.me/pice1962">
                 <FontAwesomeIcon icon={faTelegram} size="3x"/>
               </a>
               <a className="footer-social-item">
@@ -86,7 +86,7 @@ export const Footer = () => {
               <a className="footer-social-item">
                 <FontAwesomeIcon icon={faTwitter} size="3x"/>
               </a>
-              <a className="footer-social-item">
+              <a className="footer-social-item" href="https://web.facebook.com/photo/?fbid=689766997375823&set=a.119977431021452">
                 <FontAwesomeIcon icon={faFacebook} size="3x"/>
               </a>
             </div>

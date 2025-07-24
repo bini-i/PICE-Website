@@ -264,8 +264,11 @@
         /* background: linear-gradient(53deg,rgba(20, 20, 0, 0.72) 0%, rgba(56, 56, 0, 0.65) 22%, rgba(0, 104, 148, 0.38) 32%, rgba(0, 104, 148, 0) 42%); */
         
         /* background: linear-gradient(179deg,rgba(0, 84, 120, 1) 0%, rgba(0, 87, 125, 0.81) 10%, rgba(0, 120, 171, 0) 100%); */
+        
+        /* background: linear-gradient(35deg,rgba(99, 99, 0, 1) 0%, rgb(46, 87, 126) 71%); */
 
-        background: linear-gradient(35deg,rgba(99, 99, 0, 1) 0%, rgba(0, 29, 56, 1) 71%);
+        background: linear-gradient(35deg,rgba(99, 99, 0, 1) 0%, rgba(0, 29, 56, 1) 71%);        
+
         opacity: 40%;
         
         width: 100%;
@@ -396,6 +399,7 @@
     .hero-gradient {
         /* background-image: linear-gradient(180deg,#315d7180,#315d7199,#315d71); */
         /* background-image: radial-gradient(ellipse 200% 100% at bottom left,#fcfc00d3,#eaeefe94 100%); */
+        /* background: linear-gradient(35deg,rgba(49, 93, 113, 0.6) 0%, rgba(0, 29, 56, 0.2) 71%); */
         background: linear-gradient(35deg,rgba(99, 99, 0, 0.8) 0%, rgba(0, 29, 56, 0.2) 71%);
     }
 
@@ -712,6 +716,123 @@
         --tw-text-opacity: 1;
         color: rgb(114 114 5 / var(--tw-text-opacity));
     }
+
+    
+    
+    /* Admission Section start */
+
+    .admission-trainings-card1 {
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        padding: 30px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .admission-trainings-card1 .bg1 {
+        background-image: url("./../assets/workshop-illustration.png");
+    }
+
+    .admission-trainings-card1::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to bottom, transparent, rgba(17, 29, 94, 0.9));
+        left: 0;
+        top: 0;
+    }
+
+    .academic-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 30px;
+    }
+
+    .academic-top-content {
+        position: relative;
+        padding-left: 30px;
+
+    }
+
+    .academic-top-content h3 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 15px;
+        /* transition: $transition; */
+
+    }
+
+    .academic-top-content:hover {
+        color: #e32845;
+    }
+
+    .academic-top-content i {
+        color: #e32845;
+        font-size: 20px;
+        position: absolute;
+        left: 0;
+    }
+
+    .academic-content p {
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .serial {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+
+    .serial p {
+        color: #073352;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 767px) {
+        admission-trainings-card1 {
+            height: 400px;
+            padding: 20px;
+
+            /* .academic-content {
+                padding: 20px;
+                .academic-top-content {
+                    padding-left: 25px;
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+            } */
+        }
+
+        .serial {
+            left: 20px;
+            top: 20px;
+        }
+
+        .academic-content {
+            padding: 20px;
+
+        }
+
+        .academic-top-content {
+            padding-left: 25px;
+
+        }
+
+        .academic-content .academic-top-content h3 {
+            font-size: 20px;
+        }
+    }
+
+
+    /* Admission Section end */
+
 
     /* Footer */
 
