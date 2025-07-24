@@ -55,7 +55,7 @@ export const Admission = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-row flex-wrap gap-6 justify-center">
+                <div className="flex flex-col md:flex-row flex-wrap gap-6 justify-center">
                     <div className="lg:w-1/4 md:w-1/2">
                         <div className="admission-trainings-card1 bg-1">
                             <div className="serial">
@@ -69,7 +69,7 @@ export const Admission = () => {
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur ad
                                 piscing elit ut elit tellus luctus nec dolor sit amet consec teturul</p>
-                                <a href="academics-details.html" className="read-more-btn white-color">Undergraduate Education<i className="flaticon-next"></i></a>
+                                {/* <a href="academics-details.html" className="read-more-btn white-color"><i className="flaticon-next"></i></a> */}
                             </div>
                         </div>
                     </div>
