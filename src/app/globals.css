@@ -730,8 +730,16 @@
         margin-bottom: 30px;
     }
 
-    .admission-trainings-card1 .bg1 {
-        background-image: url("./../assets/workshop-illustration.png");
+    .admission-trainings-card1.bg-1 {
+        background-image: url("./../assets/admission-bg1.png");
+    }
+
+    .admission-trainings-card1.bg-2 {
+        background-image: url("./../assets/admission-bg2.png");
+    }
+
+    .admission-trainings-card1.bg-3 {
+        background-image: url("./../assets/admission-bg3.png");
     }
 
     .admission-trainings-card1::before {
@@ -789,7 +797,7 @@
     }
 
     .serial p {
-        color: #073352;
+        color: #fff;
         font-size: 18px;
         font-weight: bold;
     }

@@ -64,25 +64,46 @@ export const Admission = () => {
 
                             <div className="academic-content">
                                 <div className="academic-top-content">
-                                    <i className="flaticon-graduation"></i>
+                                    {/* <i className="flaticon-graduation"></i> */}
                                     <a href=""><h3>Short Term Training</h3></a>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur ad
-                                piscing elit ut elit tellus luctus nec dolor sit amet consec teturul</p>
+                                <p>Short-term training for industry and TVET trainers focuses on rapidly equipping educators with specialized, current technical skills directly applicable to evolving industry demands.</p>
                                 {/* <a href="academics-details.html" className="read-more-btn white-color"><i className="flaticon-next"></i></a> */}
                             </div>
                         </div>
                     </div>
 
                     <div className="lg:w-1/4 md:w-1/2">
-                        <div className="admission-trainings-card1 bg-1">
-                            some content
+                        <div className="admission-trainings-card1 bg-2">
+                            <div className="serial">
+                                <p>02.</p>
+                            </div>
+
+                            <div className="academic-content">
+                                <div className="academic-top-content">
+                                    {/* <i className="flaticon-graduation"></i> */}
+                                    <a href=""><h3>Teaching Methodology</h3></a>
+                                </div>
+                                <p>Teaching Methodology training empowers all educators with effective instructional strategies to enhance learning outcomes and student engagement.</p>
+                                {/* <a href="academics-details.html" className="read-more-btn white-color"><i className="flaticon-next"></i></a> */}
+                            </div>
                         </div>
                     </div>
 
                     <div className="lg:w-1/4 md:w-1/2">
-                        <div className="admission-trainings-card1 bg-1">
-                            some content
+                        <div className="admission-trainings-card1 bg-3">
+                            <div className="serial">
+                                <p>03.</p>
+                            </div>
+
+                            <div className="academic-content">
+                                <div className="academic-top-content">
+                                    {/* <i className="flaticon-graduation"></i> */}
+                                    <a href=""><h3>Life Skill Training</h3></a>
+                                </div>
+                                <p>Life skill training for young Ethiopians equips them with practical abilities and knowledge to navigate daily challenges and build a self-sufficient future.</p>
+                                {/* <a href="academics-details.html" className="read-more-btn white-color"><i className="flaticon-next"></i></a> */}
+                            </div>
                         </div>
                     </div>
                 </div>
