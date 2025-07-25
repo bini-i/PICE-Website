@@ -33,7 +33,7 @@ export const Admission = () => {
                     <div className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
                         <div className="h-full flex flex-col justify-between">
                             {/* <Image src={AutomotiveImage} alt="Automotive Image" className="" /> */}
-                            <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[20px] md:leading-[30px] font-bold tracking-tighter">Short Term Training</h3>
+                            <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[20px] md:leading-[30px] font-bold tracking-tighter">Are you a TVET trainer?</h3>
                             {/* <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p> */}
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export const Admission = () => {
                     <div className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
                         <div className="h-full flex flex-col justify-between">
                             {/* <Image src={AutomotiveImage} alt="Automotive Image" className="" /> */}
-                            <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[20px] md:leading-[30px] font-bold tracking-tighter">Teaching Methodology</h3>
+                            <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[20px] md:leading-[30px] font-bold tracking-tighter">Are you an industry technical professional?</h3>
                             {/* <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p> */}
                         </div>
                     </div>
@@ -49,7 +49,7 @@ export const Admission = () => {
                     <div className="flex-[0_1_24%] flex flex-col mb-5 items-center p-10 rounded-3xl shadow-[0_7px_14px_#cfcfcf] min-w-xs w-full hover:cursor-pointer">
                         <div className="h-full flex flex-col justify-between">
                             {/* <Image src={AutomotiveImage} alt="Automotive Image" className="" /> */}
-                            <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[20px] md:leading-[30px] font-bold tracking-tighter">Industry Training</h3>
+                            <h3 className="mb-3 text-[#1E1E03] text-center text-xl md:text-[20px] md:leading-[30px] font-bold tracking-tighter">Looking to gain life skills as a young Ethiopian?</h3>
                             {/* <p className="text-center text-[#1E1E03] text-[16px] leading-[20px] md:text-[14px]">Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum</p> */}
                         </div>
                     </div>
