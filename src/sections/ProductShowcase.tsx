@@ -14,7 +14,7 @@ const inter = Inter({
 
 export const ProductShowcase = () => {
   return (
-    <section className={twMerge(inter.className, "bg-gradient-to-b from-[#FFFFFF] to-[#fcfc0071] py-24 overflow-x-clip")}>
+    <section className={twMerge(inter.className, "bg-gradient-to-b from-[#FFFFFF] to-[#fcfc0071] pt-24 pb-16 overflow-x-clip")}>
       <div className="container">
         <div className="max-w-[540px] mx-auto mb-6">
           <div className="flex justify-center">
@@ -26,59 +26,17 @@ export const ProductShowcase = () => {
 
         <ShowRoomCarousel />
 
-        <div className="px-10 pt-6 pb-12 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-0">
-
-          <div className="flex flex-row md:flex-row gap-6 lg:gap-0">
-            <div className="mb-2 lg:px-3">
-              {/* <CheckIcon className="h-6 w-6" /> */}
-              <h3 className="tag-black text-base md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Machine Shop</h3>
-              <p className="text-[14px] leading-[30px] tracking-tight"></p>
-              {/* <div className="flex gap-1 items-center mt-[20px]">
-                <button className="btn btn-text gap-1 px-0">
-                  <span>Learn more</span>
-                  <ArrowIcon className="h-5 w-5" />
-                </button>
-              </div> */}
-            </div>
-            <div className="mb-2 lg:px-3">
-              {/* <CheckIcon className="h-6 w-6" /> */}
-              <h3 className="tag-black text-base md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Garment Shop</h3>
-              <p className="text-[14px] leading-[30px] tracking-tight"></p>
-              {/* <div className="flex gap-1 items-center mt-[20px]">
-                <button className="btn btn-text gap-1 px-0">
-                  <span>Learn more</span>
-                  <ArrowIcon className="h-5 w-5" />
-                </button>
-              </div> */}
-            </div>
-          </div>
-
-          <div className="flex flex-row md:flex-row gap-6 lg:gap-0">
-            <div className="mb-2 lg:px-3">
-              {/* <CheckIcon className="h-6 w-6" /> */}
-              <h3 className="tag-black text-base md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">ICT Labs</h3>
-              <p className="text-[14px] leading-[30px] tracking-tight"></p>
-              {/* <div className="flex gap-1 items-center mt-[20px]">
-                <button className="btn btn-text gap-1 px-0">
-                  <span>Learn more</span>
-                  <ArrowIcon className="h-5 w-5" />
-                </button>
-              </div> */}
-            </div>
-            <div className="mb-2 lg:px-3">
-              {/* <CheckIcon className="h-6 w-6" /> */}
-              <h3 className="tag-black text-base md:text-base mb-3 md:text-[30px] md:leading-[30px] font-bold tracking-tighter">Wood Shop</h3>
-              <p className="text-[14px] leading-[30px] tracking-tight"></p>
-              {/* <div className="flex gap-1 items-center mt-[20px]">
-                <button className="btn btn-text gap-1 px-0">
-                  <span>Learn more</span>
-                  <ArrowIcon className="h-5 w-5" />
-                </button>
-              </div> */}
-            </div>
-          </div>
-
+        
+        <div className="wrapper">
+          <ul className={twMerge(inter.className, "dynamic-txts")}>
+            <li><span>Machine Shop</span></li>
+            <li><span>Garment Shop</span></li>
+            <li><span>ICT Labs</span></li>
+            <li><span>Wood Workshop</span></li>
+            <li><span>Incubation Space</span></li>
+          </ul>
         </div>
+
       </div>
     </section>
   );

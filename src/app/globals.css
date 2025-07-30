@@ -62,6 +62,127 @@
         /* color: #3D3D3D;  */
     }
 
+/* Home page product showcase text carousel */
+
+    .shop-text-carousel {
+        margin: 6.25em auto;
+        height: 2.6em;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .shop-text-carousel ul, .shop-text-carousel li {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 13.5em;
+        /* width: 100%; */
+    }
+
+    .shop-text-carousel li {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* height: 1em !important; */
+        font: 6em;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .shop-text-carousel ul{
+        animation: scroll-auto 10s ease-in-out infinite;
+    }
+
+    @keyframes scroll-auto {
+        0%,
+        20% {
+            transform: translate(0px, -12.50em);
+        }
+        20%,
+        40% {
+            transform: translate(0px, -9.375em);
+        }
+        40%,
+        60% {
+            transform: translate(0px, -6.44em);
+        }
+        60%,
+        80% {
+            transform: translate(0px, -3.44em);
+        }
+        80%,
+        100% {
+            transform: translate(0px, -0.315em);
+        }
+        100%,
+        0% {
+            transform: translate(0px, -12.50em);
+        }
+    }
+
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+      }
+      .wrapper .static-txt{
+        color: #fff;
+        font-size: 60px;
+        font-weight: 400;
+      }
+      .wrapper .dynamic-txts{
+        margin-left: 15px;
+        height: 90px;
+        line-height: 60px;
+        overflow: hidden;
+      }
+      .dynamic-txts li{
+        list-style: none;
+        color: #343F4F;
+        font-size: 30px;
+        font-weight: 700;
+        /* text-transform: uppercase; */
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+      }
+      @keyframes slide {
+        100%{
+          top: -360px;
+        }
+      }
+      .dynamic-txts li span{
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+      }
+      .dynamic-txts li span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #fefe97;
+        border-left: 4px solid #FC6D6D;
+        animation: typing 3s steps(10) infinite;
+      }
+      @keyframes typing {
+        40%, 60%{
+          left: calc(100% + 30px);
+        }
+        100%{
+          left: 0;
+        }
+      }
+      
+      
+
+
+
+
+
+
     /* Dropdwon Menu */
 
     .dropdown {

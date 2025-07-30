@@ -49,11 +49,11 @@ export default function Home() {
             <section className="hero flex flex-col items-center container border-0">
                 <div className="w-[80vw] pl-6 flex flex-col justify-center items-center md:block text-center"> 
                     <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter text-white bg-clip-text my-4">Offices</h2>
-                    {/* <p className="text-center text-[22px] leading-[30px] tracking-tight text-[#fff] mt-5">Empowering your staff with comprehensive training programs and transforming your workforce with industry-leading vocational training programs.</p> */}
-                    {/* <a href="#services" className={twMerge(roboto.className, "btn btn-primary font-bold")}>Learn more →</a> */}
                 </div>
             </section>
           </div>
+
+
         </div>
 
         <div className={twMerge(barlow.className, "grid-page-layout flex flex-col h-full md:flex-row rounded border container py-10")}>
