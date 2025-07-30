@@ -4,7 +4,7 @@ import Logo from "@/assets/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faLocation, faLocationPin, faLocationPinLock } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { faFacebook, faTelegram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTelegram, faTiktok, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 import { Barlow_Semi_Condensed } from "next/font/google";
 import { twMerge } from "tailwind-merge";
@@ -80,13 +80,13 @@ export const Footer = () => {
               <a className="footer-social-item" href="https://t.me/pice1962">
                 <FontAwesomeIcon icon={faTelegram} size="3x"/>
               </a>
-              <a className="footer-social-item">
+              <a className="footer-social-item" href="https://www.youtube.com/@pice1962">
                 <FontAwesomeIcon icon={faYoutube} size="3x"/>
               </a>
-              <a className="footer-social-item">
-                <FontAwesomeIcon icon={faTwitter} size="3x"/>
+              <a className="footer-social-item" href="https://www.tiktok.com/@pice_1962">
+                <FontAwesomeIcon icon={faTiktok} size="3x"/>
               </a>
-              <a className="footer-social-item" href="https://web.facebook.com/photo/?fbid=689766997375823&set=a.119977431021452">
+              <a className="footer-social-item" href="https://web.facebook.com/edu.pice.et">
                 <FontAwesomeIcon icon={faFacebook} size="3x"/>
               </a>
             </div>

@@ -96,7 +96,7 @@ export const Menus: MenuItem[] = [
   },
   {
     name: "Innovation",
-    url: "/innovation"
+    url: "/technology"
   },
   {
     name: "Offices",
