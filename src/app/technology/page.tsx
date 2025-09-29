@@ -31,12 +31,12 @@ export default function Home() {
 
                 <div className=" w-full pt-[5rem] pb-10 flex flex-col justify-center">
                     <section className="hero flex flex-col items-center container border-0">
-                        <div className="w-[80vw] pl-6 flex flex-col justify-center items-center md:block text-center"> 
+                        <div className="w-[80vw] pl-6 flex flex-col justify-center items-center text-center"> 
                             <h2 className="text-center text-3xl md:text-[44px] md:leading-[60px] font-bold tracking-tighter text-[#fff] my-4">Technology Development and Incubation Service</h2>
                             <p className="text-center text-[22px] leading-[30px] tracking-tight text-[#fff] mt-5">Empowering industries with cutting-edge research, innovative design, and comprehensive incubation services to foster competitive ecosystems.</p>
-                            <div className="flex justify-center">
+                            {/* <div className="flex justify-center"> */}
                                 <a href="#services" className={twMerge(roboto.className, "btn btn-primary font-bold")}>Learn more →</a>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </section>
                 </div>

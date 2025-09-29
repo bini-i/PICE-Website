@@ -16,7 +16,7 @@ export default function Home() {
       <div className={twMerge(inter.className ,"hero-gradient")}>
         <Header />
 
-        <div className=" w-full h-[35vh] md:h-[50vh] flex flex-col justify-center">
+        <div className=" w-full h-[35vh] md:h-[50vh] flex flex-col justify-center pt-[5rem]">
             <section className="hero flex flex-col items-center container border-0">
               <div className="w-[80vw] pl-6 flex flex-col justify-center items-center md:block text-center"> 
                 <h2 className="header-marker text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter text-[#fff] mt-5 py-10">Mission, Vission, and Core Values</h2>

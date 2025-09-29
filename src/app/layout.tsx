@@ -4,7 +4,7 @@ import "./globals.css";
 import { twMerge} from "tailwind-merge";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import {config} from "@fortawesome/fontawesome-svg-core"
+import {config} from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
 const dmSans = DM_Sans({ subsets: ["latin"] });

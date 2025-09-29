@@ -297,7 +297,7 @@
     }
 
     .btn {
-        @apply w-full lg:w-[200px] min-w-fit w-fit md:mt-1 md:mb-4 mt-3 md:text-xl text-xl px-14 md:px-14 font-semibold shadow-md scale-90 h-10 md:h-10 border-2 border-[#fcfb00] rounded-3xl md:scale-100 hover:bg-[#44441c]  hover:scale-105 transition-all transform duration-300 flex items-center justify-center tracking-tight
+        @apply w-full lg:w-[200px] min-w-fit w-max md:mt-1 md:mb-4 mt-3 md:text-xl text-xl px-14 md:px-14 font-semibold shadow-md scale-90 h-10 md:h-10 border-2 border-[#fcfb00] rounded-3xl md:scale-100 hover:bg-[#44441c]  hover:scale-105 transition-all transform duration-300 flex items-center justify-center tracking-tight
     }
 
     .btn-primary {
