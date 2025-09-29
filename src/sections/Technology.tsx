@@ -25,7 +25,7 @@ export const Technology = () => {
 
             <section className={twMerge(barlow.className, "bg-gray-300 text-black py-16 md:py-20")} id="services">
                 <div className="container md:flex py-6 md:py-8">
-                    <div className="md:w-1/2 px-4 mb-12 relative">
+                    <div className="md:w-1/2 px-4 mb-12 relative flex justify-center">
                         <Image src={TechnologyBanner1} alt="Technology illustration" className="h-auto w-[300px] md:scale-125"/>
                     </div>
 
@@ -41,7 +41,7 @@ export const Technology = () => {
 
             <section className={twMerge(barlow.className, "technology-hero bg-[#0384d2cc] text-xl py-16")}>
                 <div className="container md:flex pb-10 md:py-14">
-                    <div className="md:hidden md:w-1/2 px-4 py-6 relative">
+                    <div className="md:hidden md:w-1/2 px-4 py-6 relative flex justify-center">
                         <Image src={TechnologyBanner2} alt="Technology research illustration" className="h-auto w-[300px]"/>
                     </div>
 
@@ -53,7 +53,7 @@ export const Technology = () => {
 
                     </div>
 
-                    <div className="hidden md:flex md:w-1/2 pl-20 relative">
+                    <div className="hidden md:flex md:w-1/2 pl-20 relative flex justify-center">
                         <Image src={TechnologyBanner2} alt="Hiring illustration" className="h-auto w-[300px] md:scale-125 "/>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ export const Technology = () => {
 
             <section className={twMerge(barlow.className, "bg-gray-300 text-black py-16 md:py-20")} id="services">
                 <div className="container md:flex py-6 md:py-8">
-                    <div className="md:w-1/2 px-4 mb-12 relative">
+                    <div className="md:w-1/2 px-4 mb-12 relative flex justify-center">
                         <Image src={TechnologyBanner3} alt="Technology illustration" className="h-auto w-[300px] md:scale-125"/>
                     </div>
 

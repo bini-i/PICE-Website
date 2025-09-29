@@ -44,7 +44,7 @@ export default function Home() {
         <div className="hero-gradient">
           <Header />
           
-          <div className=" w-full h-[30vh] md:h-[45vh] flex flex-col justify-center">
+          <div className=" w-full h-[30vh] md:h-[45vh] flex flex-col justify-center pt-[5rem]">
             <section className="hero flex flex-col items-center container border-0">
                 <div className="w-[80vw] pl-6 flex flex-col justify-center items-center md:block text-center"> 
                     <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter text-white bg-clip-text my-4">Offices</h2>

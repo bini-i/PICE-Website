@@ -40,7 +40,7 @@ export default function Home() {
         <div className="hero-gradient">
           <Header />
 
-          <section className="hero flex flex-col items-center container">
+          <section className="hero flex flex-col items-center container pt-[5rem]">
               <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter text-white bg-clip-text my-4">Offices</h2>
               {/* <p className="text-center text-[22px] leading-[30px] tracking-tight text-[#fff] mt-5">Empowering your staff with comprehensive training programs and transforming your workforce with industry-leading vocational training programs.</p> */}
               {/* <a href="#services" className={twMerge(roboto.className, "btn btn-primary font-bold")}>Learn more →</a> */}

@@ -29,7 +29,7 @@ export default function Home() {
             <div className={twMerge(inter.className, "hero-gradient")}>
                 <Header />
 
-                <div className=" w-full h-[50vh] md:h-[70vh] flex flex-col justify-center">
+                <div className=" w-full pt-[5rem] pb-10 flex flex-col justify-center">
                     <section className="hero flex flex-col items-center container border-0">
                         <div className="w-[80vw] pl-6 flex flex-col justify-center items-center md:block text-center"> 
                             <h2 className="text-center text-3xl md:text-[44px] md:leading-[60px] font-bold tracking-tighter text-[#fff] my-4">Technology Development and Incubation Service</h2>

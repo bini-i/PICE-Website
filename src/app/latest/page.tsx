@@ -42,7 +42,7 @@ export default function Home() {
         <div className="mb-8">
             <Header />
 
-            <div className="flex flex-col justify-center relative z-0">
+            <div className="flex flex-col justify-center relative z-0 pt-[5rem]">
 
     
               <div className=" w-full h-[35vh] flex flex-col justify-center">
