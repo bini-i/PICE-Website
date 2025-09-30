@@ -1,111 +1,117 @@
 "use client";
 
 import { Header } from "@/sections/Header";
-// import { Mission } from "@/sections/Mission";
 import { Footer } from "@/sections/Footer";
-import { PageBanner } from "@/sections/PageBanner";
-
 import Image from "next/image";
 import logo from "@/assets/Logo.png";
-
-import { Inter, Roboto } from "next/font/google";
-import { Merriweather } from "next/font/google";
 import { Barlow_Semi_Condensed } from "next/font/google";
-
-import { twMerge} from "tailwind-merge";
+import { twMerge } from "tailwind-merge";
 import { usePathname } from "next/navigation";
-
-const roboto = Roboto({
-  weight: ['400', '500', '700'],
-  subsets: ['latin'],
-})
-
-const merriweather = Merriweather({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-})
+import { FaUserTie, FaBuilding } from "react-icons/fa";
 
 const barlow = Barlow_Semi_Condensed({
-    weight: ['400', '600', '700'],
-    subsets: ['latin'],
-    display: 'swap',
-})
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
-const inter = Inter({
-    weight: ['400', '500', '700'],
-    subsets: ['latin'],
-    display: 'swap',
-})
+const navLinks = [
+  { href: "/offices/dean", label: "Dean" },
+  { href: "/offices/capacity-vice-dean", label: "Capacity Building Vice Dean" },
+  { href: "/offices/research-vice-dean", label: "Institution Development Vice Dean" },
+  { href: "/offices/technology-vice-dean", label: "Technology Vice Dean" },
+];
 
 export default function Home() {
-    const pathname = usePathname();
+  const pathname = usePathname();
+
   return (
     <>
-        <div className="hero-gradient">
-          <Header />
-
-          <div className=" w-full h-[30vh] md:h-[45vh] flex flex-col justify-center pt-[5rem]">
-            <section className="hero flex flex-col items-center container border-0">
-                <div className="w-[80vw] pl-6 flex flex-col justify-center items-center md:block text-center"> 
-                    <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter text-white bg-clip-text my-4">Offices</h2>
-                </div>
-            </section>
+      <div className="relative bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 shadow-lg pt-[5rem]">
+        <Header />
+        {/* Banner with integrated navigation */}
+        <div className="relative z-10 w-full flex flex-col items-center justify-center py-10 md:py-14">
+          <div className="flex items-center gap-4 mb-2">
+            <span className="inline-flex items-center justify-center bg-white/20 rounded-full p-4 shadow-lg">
+              <FaBuilding className="text-white text-2xl md:text-4xl drop-shadow" />
+            </span>
+            <h2
+              className={twMerge(
+                barlow.className,
+                "text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight drop-shadow-lg"
+              )}
+            >
+              Offices
+            </h2>
           </div>
-          
-        </div>
+          <p className="text-white/80 text-sm sm:text-base md:text-lg font-medium text-center max-w-2xl">
+            Explore the leadership and key offices that drive our institution’s vision and excellence.
+          </p>
+          <div className="mt-4 w-20 md:w-24 h-1 rounded-full bg-white/70" />
 
-        <div className={twMerge(barlow.className, "grid-page-layout flex flex-col h-full md:flex-row rounded border container py-10")}>
-            <div className="grid-page-column-nav bg-MetallicBlue/30 md:bg-MetallicBlue/80 w-full md:max-w-[300px] md:flex flex-col gap-5 h-full py-14 mr-8 md:border-r-2 border-[#6b6b06]">
-              <nav>
-                    <div className="cwf-nav__container">
-                        <div className="cwf-nav__controller">
-                            <ul className="">
-                                <li className="nav-item">
-                                    <a className={ pathname === "/offices/dean" ? "nav-link flex w-full font-bold text-[#fff] bg-[#696900]" : "nav-link flex w-full font-bold text-[#6d6d6d]"} href="/offices/dean" aria-current="page">
-                                        Dean
-                                    </a>
-                                </li><li className="nav-item">
-                                    <a className={ pathname === "/offices/capacity-vice-dean" ? "nav-link flex w-full font-bold text-[#fff] bg-[#696900]" : "nav-link flex w-full font-bold text-[#6d6d6d]"} href="/offices/capacity-vice-dean">
-                                        Capacity Building Vice Dean
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className={ pathname === "/offices/research-vice-dean" ? "nav-link flex w-full font-bold text-[#fff] bg-[#696900]" : "nav-link flex w-full font-bold text-[#6d6d6d]"} href="/offices/research-vice-dean">
-                                        Institution Development Vice Dean
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className={ pathname === "/offices/technology-vice-dean" ? "nav-link flex w-full font-bold text-[#fff] bg-[#696900]" : "nav-link flex w-full font-bold text-[#6d6d6d]"} href="/offices/technology-vice-dean">
-                                        Technology Vice Dean
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+          {/* Integrated navigation */}
+          <nav className="w-full flex justify-center mt-8">
+            <ul className="flex flex-wrap gap-2 md:gap-4 px-2 md:px-0">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    aria-current={pathname === link.href ? "page" : undefined}
+                    className={twMerge(
+                      "block px-4 py-2 rounded-full font-semibold whitespace-nowrap transition-all duration-150 border-t-4 text-base md:text-lg",
+                      pathname === link.href
+                        ? "bg-white text-blue-700 border-blue-600 shadow"
+                        : "bg-blue-600/30 text-white border-transparent hover:bg-white hover:text-blue-700 hover:border-blue-400"
+                    )}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+        <div className="absolute inset-0 opacity-20 bg-[url('/pattern.svg')] bg-repeat pointer-events-none" />
+      </div>
+
+      <div className={twMerge(barlow.className, "container mx-auto mt-4 px-4 flex flex-col items-center")}>
+        {/* Main Content with top border only and adjusted text sizes */}
+        <section className="w-full max-w-3xl flex flex-col md:flex-row items-center gap-8 bg-white rounded-xl shadow p-6 sm:p-10 mb-12">
+          <div className="flex flex-col items-center mb-4 md:mb-0 md:mr-6">
+            <div className="relative">
+              <Image
+                src={logo}
+                alt="Dean's Office Logo"
+                className="w-24 h-24 md:w-28 md:h-28 rounded-full border-t-4 border-blue-600 object-cover"
+                priority
+              />
+              <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-white rounded-full p-1 border border-blue-100">
+                <FaUserTie className="text-blue-500 text-xl" />
+              </span>
             </div>
+            <span className="mt-3 text-sm text-blue-700 font-semibold md:text-sm">
+              Vice Dean of Institution Development
+            </span>
+            <span className="mt-1 px-3 py-1 rounded bg-blue-100 text-blue-800 font-bold text-sm md:text-base self-start">
+              Bayeligne
+            </span>
+          </div>
 
-            <main id="services" className="grid-page-column-content">
+          <div className="w-full">
+            <h1 className="font-bold text-lg md:text-2xl text-blue-700 mb-3">
+              Welcome Message
+            </h1>
+            <p className="text-justify text-base md:text-lg leading-relaxed text-gray-700">
+              At our Center, we are committed to enhancing the skills and competencies of TVET trainers and leaders through cutting-edge training programs. Our focus areas include advanced manufacturing, ICT solutions, automotive technology, construction finishing, and more. We serve as a hub for innovation, equipping institutions with the tools needed for excellence.
+              <br />
+              <br />
+              I invite industries, TVET institutions, and professionals to collaborate with us and benefit from our expertise. Visit us today and be part of a transformative journey toward productivity and excellence!
+            </p>
+          </div>
+        </section>
+      </div>
 
-
-            <section className="flex flex-col md:flex-row items-center gap-16 py-16 px-6">
-                <Image src={logo} alt="Technology illustration" className="h-auto w-[200px] rounded-full"/>
-
-                <div>
-                    <h1 className="title-type-2 my-6 text-[#0384d2] text-2xl md:text-[27px] md:leading-[30px]">Vice Dean of Institution Development</h1>
-
-                    <p className="font-normal my-6 text-justify text-xl leading-relaxed">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse aliquam minus necessitatibus eveniet vitae doloremque ut atque, ab nesciunt quisquam consequuntur amet vero aspernatur, obcaecati quo possimus. Quo, culpa?
-                    </p>
-                </div>
-            </section>
-
-
-
-            </main>
-        </div>
-
-        <Footer/>
+      <Footer />
     </>
   );
 }
